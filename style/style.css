@@ -13,20 +13,35 @@ nav {
 }
 
 .login {
-    padding: 8px 10.4px;
-    background-color: #E1ECF4;
-    color: #39739d !important;
-    border: none;
+    padding: 8px 10px;
+    background-color:transparent;
+    color: #0A95FF;
+    border: 1px solid #0A95FF;
+}
+
+input{
+	border:0px solid;
+	outline: none;
+}
+
+.bgForUser{
+	background-color: hsl(210,8%,95%);
+	border-radius:5px 0px 0px 5px;	
 }
 
 
 .signup {
-    padding: 8px 10.4px;
+    padding: 8px 10px;
     border: none;
     background-color: #0A95FF;
-    color: white !important;
+    color:#ffffff;
 }
 
+.profilePhoto{
+	width:150px;
+	height:150px;
+	margin-top: 15px;
+}
 
 .profile{
 	padding: 6px 12px;
@@ -54,9 +69,26 @@ nav {
 	color:#3B4045;
 }
 
+.aStyle{
+	text-decoration: none;
+}
+
 .pStyleFontSize15{
 	font-size:15px; 
 	color:#232629;
+}
+
+.pStyleFontSize17{
+	font-size:17px; 
+	color:#0c0d0e;
+}
+
+a{
+	text-decoration:none;
+}
+
+.aStyle{
+	text-decoration:underline;
 }
 
 .pStyleForHead{
@@ -66,6 +98,8 @@ nav {
 }
 
 .pStyleFontSize13{
+	font-size-13px;
+	color:#636B74;
 	
 }
 
@@ -75,6 +109,10 @@ nav {
 	padding:5px;
 	background:hsl(210,80%,91%);
 	border-radius:5px;
+}
+
+.margin{
+	margin-right:350px;
 }
 
 .discGold{
@@ -104,15 +142,22 @@ nav {
 	margin-right:3px;
 }
 
-.topPostDivbg{
-	background:hsl(148,70%,31%);
-	border-radius:5px;
-	margin:0px 10px;
-	padding:2px;
-	color:#ffffff;
+.topPostDivbg {
+    	display: flex;
+   	background: hsl(148,70%,31%);
+    	border-radius: 5px;
+    	height: max-content;
+    	margin: 0px 10px;
+    	padding: 2px;
+    	align-items: center;
+    	color: #ffffff;
 }
 
+
 .topPostDiv{
+	display: flex;
+	height: max-content;
+	align-items: center;
 	border:1px solid #9fa6ad;
 	border-radius:5px;
 	margin:0px 10px;
@@ -126,15 +171,17 @@ footer {
     	position:sticky;
 }
 
-ul {
+footer ul {
     	list-style-type: none;
 }
 
 .footerHead{
-	color: #9199A1
+	color:hsl(210,8%,80%);
+	font-size:13px;
 }
 
 footer ul li a,
 .td-underline a {
     	color: #9199A1;
 }
+

@@ -7,80 +7,113 @@
       <link rel="stylesheet" href="./style/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
-<body class="container-fluid p-0">
-    <!-- nav bar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light container-fluid">
-        <button class="navbar-toggler d-sm-none d-xs-block ms-3 " type="button" data-toggle="collapse"
-            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-            <img src="assets/stackIcon.png" width="30" height="30" alt="" class="ms-2 d-sm-none d-block">
-            <img src="assets/stackOverflow.png" width="166" height="34" alt="" class="ms-5 d-none d-sm-block">
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+   <body class="container-fluid p-0">
+      <!-- nav bar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light container-fluid d-flex">
+         <button class="navbar-toggler d-sm-none d-xs-block ms-3 " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"  aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"> </span>
+         </button>
+         <a class="navbar-brand" href="#">
+         <img src="assets/stackIcon.png" width="30" height="30" alt="" class="d-sm-none d-block">
+         <img src="assets/stackOverflow.png" width="166" height="34" alt="" class="ms-4 d-none d-sm-block">
+         </a>
+         <div class="collapse navbar-collapse flex-grow-0 me-5">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item ">
-                    <a class="nav-link bar-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bar-link " href="#">Product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bar-link d-none d-xl-block  " href="#">For Teams</a>
-                </li>
+               <li>
+                  <a class="nav-link bar-link d-none d-md-block" href="#">About</a>
+               </li>
+               <li>
+                  <a class="nav-link bar-link" href="#">Product</a>
+               </li>
+               <li>
+                  <a class="nav-link bar-link  d-none d-md-block" href="#">For Teams</a>
+               </li>
             </ul>
-        </div>
-        <form class="form-inline my-2 my-lg-0 col-md-6 col-sm-4 d-none  d-sm-block ">
-            <input class="form-control" type="search" placeholder="user" aria-label="Search">
-        </form>
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-            class="bi bi-search d-xs-block d-sm-none ms-2" viewBox="0 0 16 16">
-            <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-        </svg>
-        <form class="form-inline ms-3">
-            <button class="btn login" type="button">Log in</button>
-            <button class="btn signup me-3" type="button">Sign up</button>
-        </form>
-    </nav>
-
-    <!-- body -->
-    <div class="main-body d-flex justify-content-start  container-fluid">
-        <!-- side bar -->
-        <div class="m-5 pt-4 side-bar sidebar  d-none d-sm-block">
-            <div class="p-2 d-flex "><svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18"><path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9h-3Zm-8 1v6h4v-6H7Z"></path></svg> <p>Home</p></div>
-            <div class="public mt-3 ms-2 mb-1"><a>PUBLIC</a></div>
-            <div class="ques p-2 d-flex"><span class="material-symbols-outlined ques-public fs-4">public</span><a
-                    class="ms-1">Questions</a></div>
-            <div class="tag "><a href="#">Tags</a></div>
-            <div class="user"><a href="#">Users</a></div>
-            <div class="company"><a href="#">Compaines</a></div>
+         </div>
+         <div class="d-sm-none d-block">Product</div>
+         <form class="form-inline my-2 my-lg-0 flex-grow-1 d-none d-sm-block me-5">
+            <div class="d-flex justify-content-start border rounded" >
+               <div>
+                  <span class="material-symbols-outlined ">search</span>
+               </div>
+               <div>
+                  <input type="search" placeholder="user" class="p-1">
+               </div>
+            </div>
+         </form>
+         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+            class="d-xs-block d-sm-none ms-2" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+         </svg>
+         <form class="form-inline ms-3">
+            <div>
+               <button class="button rounded login" type="button">Log in</button>
+               <button class="button rounded signup me-3" type="button">Sign up</button>
+            </div>
+         </form>
+      </nav>
+      <!-- body -->
+      <div class="d-flex justify-content-start  container-fluid">
+         <!-- side bar -->
+         <div class="mt-5 m-3 pt-4 side-bar sidebar  d-none d-sm-block">
+            <div class="p-2 d-flex mt-2 gap-1">
+               <svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9h-3Zm-8 1v6h4v-6H7Z"></path>
+               </svg>
+               <span>Home</span>
+            </div>
+            <div class="p-2 d-flex  gap-1">
+               <svg aria-hidden="true" class="svg-icon iconQuestion" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="m4 15-3 3V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v9c0 1.09-.91 2-2 2H4Zm7.75-3.97c.72-.83.98-1.86.98-2.94 0-1.65-.7-3.22-2.3-3.83a4.41 4.41 0 0 0-3.02 0 3.8 3.8 0 0 0-2.32 3.83c0 1.29.35 2.29 1.03 3a3.8 3.8 0 0 0 2.85 1.07c.62 0 1.2-.11 1.71-.34.65.44 1 .68 1.06.7.23.13.46.23.7.3l.59-1.13a5.2 5.2 0 0 1-1.28-.66Zm-1.27-.9a5.4 5.4 0 0 0-1.5-.8l-.45.9c.33.12.66.29.98.5-.2.07-.42.11-.65.11-.61 0-1.12-.23-1.52-.68-.86-1-.86-3.12 0-4.11.8-.9 2.35-.9 3.15 0 .9 1.01.86 3.03-.01 4.08Z"></path>
+               </svg>
+               <span>Questions</span>
+            </div>
+            <div class="p-2 d-flex  gap-1">
+               <svg aria-hidden="true" class="svg-icon iconTags" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M9.24 1a3 3 0 0 0-2.12.88l-5.7 5.7a2 2 0 0 0-.38 2.31 3 3 0 0 1 .67-1.01l6-6A3 3 0 0 1 9.83 2H14a3 3 0 0 1 .79.1A2 2 0 0 0 13 1H9.24Z" opacity=".4"></path>
+                  <path d="M9.83 3a2 2 0 0 0-1.42.59l-6 6a2 2 0 0 0 0 2.82L6.6 16.6a2 2 0 0 0 2.82 0l6-6A2 2 0 0 0 16 9.17V5a2 2 0 0 0-2-2H9.83ZM12 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"></path>
+               </svg>
+               <span>Tags</span>
+            </div>
+            <div class="p-2 d-flex mt-2 bgForUser gap-1">
+               <svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4Z"></path>
+               </svg>
+               <b>Users</b>
+            </div>
+            <div class="p-2 d-flex  gap-1">
+               <svg aria-hidden="true" class="svg-icon iconBriefcase" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M5 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h1V4Zm7 0H6v1h6V4Z"></path>
+               </svg>
+               <span>Companies</span>
+            </div>
             <div class="coll d-flex justify-content-between">
-                <a class="fs-6 ms-2">COLLECTIVES</a>
-                <span class="material-symbols-outlined info fs-4 pe-3 text-dark">info</span>
+               <div class="p-2 mt-2"><span>COLLECTIVES</span></div>
+               <div>
+                  <svg aria-hidden="true" class="svg-icon iconPlusSm mt-3" width="13" height="13" viewBox="0 0 14 14">
+                     <path d="M8 2H6v4H2v2h4v4h2V8h4V6H8V2Z"></path>
+                  </svg>
+               </div>
             </div>
-            <div class="explore p-3">
-                <svg aria-hidden="true" class="mt-auto fc-orange-400 svg-icon iconStarVerified" width="18" height="18"
-                    viewBox="0 0 18 18">
-                    <path fill="#f48225 "
-                        d="M9.86.89a1.14 1.14 0 0 0-1.72 0l-.5.58c-.3.35-.79.48-1.23.33l-.72-.25a1.14 1.14 0 0 0-1.49.85l-.14.76c-.1.45-.45.8-.9.9l-.76.14c-.67.14-1.08.83-.85 1.49l.25.72c.15.44.02.92-.33 1.23l-.58.5a1.14 1.14 0 0 0 0 1.72l.58.5c.35.3.48.79.33 1.23l-.25.72c-.23.66.18 1.35.85 1.49l.76.14c.45.1.8.45.9.9l.14.76c.14.67.83 1.08 1.49.85l.72-.25c.44-.15.92-.02 1.23.33l.5.58c.46.52 1.26.52 1.72 0l.5-.58c.3-.35.79-.48 1.23-.33l.72.25c.66.23 1.35-.18 1.49-.85l.14-.76c.1-.45.45-.8.9-.9l.76-.14c.67-.14 1.08-.83.85-1.49l-.25-.72c-.15-.44-.02-.92.33-1.23l.58-.5c.52-.46.52-1.26 0-1.72l-.58-.5c-.35-.3-.48-.79-.33-1.23l.25-.72a1.14 1.14 0 0 0-.85-1.49l-.76-.14c-.45-.1-.8-.45-.9-.9l-.14-.76a1.14 1.14 0 0 0-1.49-.85l-.72.25c-.44.15-.92.02-1.23-.33l-.5-.58Zm-.49 2.67L10.6 6.6c.05.15.19.24.34.25l3.26.22c.36.03.5.48.23.71l-2.5 2.1a.4.4 0 0 0-.14.4l.8 3.16a.4.4 0 0 1-.6.44L9.2 12.13a.4.4 0 				0 0-.42 0l-2.77 1.74a.4.4 0 0 1-.6-.44l.8-3.16a.4.4 0 0 0-.13-.4l-2.5-2.1a.4.4 0 0 1 .22-.7l3.26-.23a.4.4 0 0 0 .34-.25l1.22		   -3.03a.4.4 0 0 1 .74 0Z">
-                    </path>
-                </svg>
-                <a href="#">Explore Collection</a>
+            <div>
+               <svg aria-hidden="true" class="fc-orange-400 svg-icon iconStarVerified" width="18" height="18"
+                  viewBox="0 0 18 18">
+                  <path fill="#f48225 "
+                     d="M9.86.89a1.14 1.14 0 0 0-1.72 0l-.5.58c-.3.35-.79.48-1.23.33l-.72-.25a1.14 1.14 0 0 0-1.49.85l-.14.76c-.1.45-.45.8-.9.9l-.76.14c-.67.14-1.08.83-.85 1.49l.25.72c.15.44.02.92-.33 1.23l-.58.5a1.14 1.14 0 0 0 0 1.72l.58.5c.35.3.48.79.33 1.23l-.25.72c-.23.66.18 1.35.85 1.49l.76.14c.45.1.8.45.9.9l.14.76c.14.67.83 1.08 1.49.85l.72-.25c.44-.15.92-.02 1.23.33l.5.58c.46.52 1.26.52 1.72 0l.5-.58c.3-.35.79-.48 1.23-.33l.72.25c.66.23 1.35-.18 1.49-.85l.14-.76c.1-.45.45-.8.9-.9l.76-.14c.67-.14 1.08-.83.85-1.49l-.25-.72c-.15-.44-.02-.92.33-1.23l.58-.5c.52-.46.52-1.26 0-1.72l-.58-.5c-.35-.3-.48-.79-.33-1.23l.25-.72a1.14 1.14 0 0 0-.85-1.49l-.76-.14c-.45-.1-.8-.45-.9-.9l-.14-.76a1.14 1.14 0 0 0-1.49-.85l-.72.25c-.44.15-.92.02-1.23-.33l-.5-.58Zm-.49 2.67L10.6 6.6c.05.15.19.24.34.25l3.26.22c.36.03.5.48.23.71l-2.5 2.1a.4.4 0 0 0-.14.4l.8 3.16a.4.4 0 0 1-.6.44L9.2 12.13a.4.4 0 				0 0-.42 0l-2.77 1.74a.4.4 0 0 1-.6-.44l.8-3.16a.4.4 0 0 0-.13-.4l-2.5-2.1a.4.4 0 0 1 .22-.7l3.26-.23a.4.4 0 0 0 .34-.25l1.22		   -3.03a.4.4 0 0 1 .74 0Z">
+                  </path>
+               </svg>
+               <span>Explore Collection</span>
             </div>
-            <p class="team fs-6 ms-2 text-body-secondary">TEAMS</p>
-        </div>
-        <!-- center content -->
-        <div class=" p-4 center-body d-flex flex-column col-lg-10 mt-5 ">
-            <!-- profile intro -->
-            <div class="intro d-flex justify-content-between">
+            <p class="p-2 fs-6 mt-4">TEAMS</p>
+         </div>
+         <div class=" p-4 center-body d-flex flex-column col-lg-10 mt-5 ">
+              <div class="intro d-flex justify-content-between">
                 <div class=" d-lg-flex justify-content-start flex">
-                    <img src="assets/profile.jpeg" alt="profile" class="profileimg">
+                    <img src="assets/profile.jpeg" alt="profile" class="profilePhoto">
                     <div class="person-intro ms-2">
                         <div class="name fs-1 mt-lg-4">Jon Skeet</div>
-                        <div class="dob-job d-flex flex-wrap">
+                        <div class="d-flex flex-wrap">
+	<div class="d-flex">
                             <svg aria-hidden="true" class="svg-icon iconCake  " width="18" height="18"
                                 viewBox="0 0 18 18">
                                 <path fill="#6A737C"
@@ -88,16 +121,20 @@
                                 </path>
                             </svg>
                             <p class="me-2 ms-0">Member for 14 years, 10 months</p>
-                            <svg aria-hidden="true" class="svg-icon iconClock mx-2 me-2" width="18" height="18"
+	</div>
+	<div class="d-flex">
+                            <svg aria-hidden="true" class="svg-icon iconClock  me-2" width="18" height="18"
                                 viewBox="0 0 18 18">
                                 <path fill="#6A737C"
                                     d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8Zm0-2c3.27 0 6-2.73 6-6s-2.73-6-6-6-6 2.73-6 6 2.73 6 6 6ZM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5Z">
                                 </path>
                             </svg>
                             <p class=" ms-0">Last seen this week</p>
+	</div>
                         </div>
                         <div class="account d-flex flex-wrap">
-                            <a href="https://twitter.com/i/flow/login?lang=en">
+	<div class="d-flex">
+                            <a href="#">
                                 <svg aria-hidden="true" class="fc-black-350 svg-icon iconTwitter me-2" width="18"
                                     height="18" viewBox="0 0 18 18">
                                     <path fill="#6A737C"
@@ -121,6 +158,8 @@
                             </svg>
                      
                             <p class="me-2">csharpindepth.com</p>
+	</div>
+	<div class="d-flex">
                             <svg aria-hidden="true" class="mrn2 svg-icon iconLocation me-2" width="17" height="18"
                                 viewBox="0 0 17 18">
                                 <path fill="#6A737C"
@@ -128,857 +167,860 @@
                                 </path>
                             </svg>
                             <p>Reading, United Kingdom</p>
+	</div>
                         </div>
                     </div>
                 </div>
-                <!-- profile drop btn -->
-                <div class="mt-5">
-                    <button type="button" class="btn btn-outline-default border border-secondary btn-sm dropdown-toggle">profile</button>
-                </div>
+               <div class="mt-5">
+                  <button type="button" class="btn btn-outline-default border border-secondary btn-sm dropdown-toggle">profile</button>
+               </div>
             </div>
             <div class="user-header mt-4">
-                <div class="d-flex gap-2">
-                    <a href="#" class="profile">Profile</a>
-                    <a href="#" class="activity">Activity</a>
-                </div>
+               <div class="d-flex gap-2">
+                  <a href="#" class="profile">Profile</a>
+                  <a href="#" class="activity">Activity</a>
+               </div>
             </div>
-            <!-- center whole body content -->
             <div class="detail-body mt-4 d-flex ">
-                <!-- center whole body content left bar-->
-                <div class="left-detail col-3 d-none d-lg-block">
-                    <h3 class="c-title">Stats</h3>
-                    <div class="card detail-card1">
-                        <div class="row ms-2 ">
-                            <div class="c-d1 col-5  m-2 p-0">
-                                <p class="mb-0">1,418,816</p>
-                                reputation
-                            </div>
-                            <div class="c-d1 col-5   m-2 p-0 ">
-                                <p class="mb-0">391.3m</p>
-                                reached
-                            </div>
+               <div class="col-3 d-none d-lg-block">
+                  <h3 class="c-title">Stats</h3>
+                  <div class="card detail-card1">
+                     <div class="row ms-2 ">
+                        <div class="c-d1 col-5  m-2 p-0">
+                           <p class="mb-0 pStyleFontSize17">1,445,635</p>
+                           reputation
                         </div>
-                        <div class="row ms-2 ">
-                            <div class="c-d1 col-5 m-2 p-0">
-                                <p class="mb-0">35,654</p>
-                                answers
-                            </div>
-                            <div class="c-d1 col-5 m-2 p-0">
-                                <p class="mb-0">54</p>
-                                questions
-                            </div>
+                        <div class="c-d1 col-5   m-2 p-0 ">
+                           <p class="mb-0 pStyleFontSize17">400.7m</p>
+                           reached
                         </div>
-                        <div class="ms-3">
-                            <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18"
-                                viewBox="0 0 18 18">
-                                <path fill="#3B4045"
-                                    d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z">
-                                </path>
-                            </svg>
-                            <div>top <b>0.01</b>% overall</div>
+                     </div>
+                     <div class="row ms-2 ">
+                        <div class="c-d1 col-5 m-2 p-0">
+                           <p class="mb-0 pStyleFontSize17">35,683</p>
+                           answers
                         </div>
-                    </div>
-                    <h3 class="c-title ">Collectives</h3>
-                    <div class="detail-card2 card p-2 ps-3">
-                        <div class="d-flex">
-                            <img src="assets/cloud.png" alt="cloud" class="h-25 w-25">
-                            <div>
-                                <p class="pStyleFontSize15 mb-0">Google Cloud</p>
-                                <p class="pStyleFontSize12"> 2021 • Member</p>
-                            </div>
+                        <div class="c-d1 col-5 m-2 p-0">
+                           <p class="mb-0 pStyleFontSize17">55</p>
+                           questions
                         </div>
-                    </div>
-                    <div class="community mt-4 d-flex justify-content-between">
-                        <h3 class="c-title">Communities</h3>
-                        <div class="com-view d-flex align-center">
-                            <p>View all</p>
-                            <svg aria-hidden="true" class="svg-icon iconShareSm" width="14" height="14" viewBox="0 0 14 14"><path d="M5 1H3a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V9h-2v2H3V3h2V1Zm2 0h6v6h-2V4.5L6.5 9 5 7.5 9.5 3H7V1Z"></path></svg>
-                        </div>
-                    </div>
-                    <div class="detail-card3 card p-3 ">
-                        <div class=" d-flex flex-column gap-0">
-                            <div class="card3-list d-flex justify-content-between ">
-				<div class="d-flex">
-                                <img class="d-none d-xl-block imgSize me-2" src="assets/stackIcon.png" alt="stack">
-                                <a href="https://stackoverflow.com/users/22656/jon-skeet" title="Stack Overflow">Stack
-                                    Overflow</a>
-				</div>
-                                <p>1.4m</p>
-                            </div>
-                            <div class="card3-list d-flex justify-content-between">
-				<div class="d-flex">
-                                <img class="d-none d-xl-block imgSize me-2" src="assets/meta.png" alt="stack">
-                                <a href="https://meta.stackexchange.com/users/22656/jon-skeet">Meta Stack Exchange</a>
-				</div>
-                                <p>93.6k</p>
-                            </div>
-                            <div class="card3-list d-flex justify-content-between">
-				<div class="d-flex">
-                                <img class="d-none d-xl-block imgSize me-2" src="assets/super.png" alt="stack">
-                                <a href="https://superuser.com/users/410/jon-skeet">Super User</a>
-				</div>
-                                <p>5.1k</p>
-                            </div>
-                            <div class="card3-list d-flex justify-content-between">
-				<div class="d-flex">
-                                <img class="d-none d-xl-block imgSize me-2" src="assets/server.png" alt="stack">
-                                <a href="https://serverfault.com/users/173/jon-skeet">Server Fault</a>
-				</div>
-                                <p>4.6k</p>
-                            </div>
-                            <div class="card3-list d-flex justify-content-between">
-				<div class="d-flex">
-                                <img class="d-none d-xl-block imgSize me-2" src="assets/soft.png" alt="stack">
-                                <a href="https://softwareengineering.stackexchange.com/users/8958/jon-skeet">Software
-                                    Engineering</a>
-				</div>
-                                <p>3.6k</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- center whole body content - middle content-->
-                <div class="right-detailm-0 ms-md-4 col 9 d-flex flex-column gap-4">
-                    <!-- STATUS -->
-                    <div class="d-block d-lg-none m-0">
-                        <h3 class="c-title">Stats</h3>
-                        <div class="card d-flex flex-row p-3 fs-1 row row-cols-sm-5 flex-wrap text-center ">
-                            <div class="c-d1 col ">
-                                <p class="mb-0 fs-sm-4 fs-6 fw-semibold">1,418,816</p>
-                                reputation
-                            </div>
-                            <div class="c-d1 col">
-                                <p class="mb-0 fs-sm-4 fs-6 fw-semibold">391.3m</p> 
-                                reached
-                            </div>
-                            <div class="c-d1 col">
-                                <p class="mb-0 fs-sm-4 fs-6 fw-semibold">35,654</p>
-                                answers
-                            </div>
-                            <div class="c-d1 col">
-                                <p class="mb-0 fs-sm-4 fs-6 fw-semibold">54</p>
-                                question
-                            </div>
-                            <div class="col text-start  py-3 py-sm-0">
-                                <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18"
-                                    viewBox="0 0 18 18">
-                                    <path fill="#3B4045"
-                                        d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z">
-                                    </path>
-                                </svg>
-                                <div>top <b>0.01</b>% overall</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ABOUT -->
-                    <div class="about mt-lg-1 ">
-                        <h3 class="p-head-size p-head-font">About</h3>
-                        <p class="p-about">Auther of <a href="#">C# in Depth</a></p>
-                        <p class="p-about">Currently a software engineer at Google, working remotely but near
-                            London.<br>
-                            Usually a Microsoft MVP (C#, 2003-2010, 2011-)
-                        </p>
-                        <p class="p-about">Sites / social:</p>
-                        <ul>
-                            <li>Mastodon: <a href="https://hachyderm.io/@jonskeet"
-                                    rel="nofollow noreferrer">@jonskeet@hachyderm.io</a></li>
-                            <li><a href="https://csharpindepth.com" rel="nofollow noreferrer">C# in Depth</a></li>
-                            <li><a href="https://codeblog.jonskeet.uk" rel="nofollow noreferrer">Coding blog</a></li>
-                            <li><a href="https://jonskeet.uk/csharp" rel="nofollow noreferrer">C# articles</a></li>
-                            <li>Twitter <a href="https://twitter.com/jonskeet" rel="nofollow noreferrer">@jonskeet</a>
-                            </li>
-                        </ul>
-                        <p class="p-about">Email: skeet@pobox.com (but please read <a
-                                href="https://codeblog.jonskeet.uk/2012/08/22/stack-overflow-and-personal-emails/"
-                                rel="nofollow noreferrer">my blog post on Stack Overflow-related emails</a> first)</p>
-                    </div>
-                    <!-- BADGES -->
-                    <div class="badges">
-                        <div class="double-p-head p-head-size d-flex justify-content-between mb-4">
-                            <h3 class="p-head-font ">Badges</h3>
-                            <a href="#" class="p-head-side">View all badges</a>
-                        </div>
-                        <div class="badger-container d-xl-flex gap-1">
-                            <div class="d-sm-flex  gap-1 col">
-                                <div class="b-c-1 card p-3 col-sm-6">
-                                    <div class="badger-icon d-flex ">
-                                        <div>
-                                            <svg aria-hidden="true" class="fc-gold svg-spot spotAward" width="48"
-                                                height="48" viewBox="0 0 48 48">
-                                                <path fill="#FFD700"
-                                                    d="M32.87 7a8.85 8.85 0 0 0-2.49-2.79 10.5 10.5 0 0 0-1.41-.92.98.98 0 0 0-.74-.1c-.46.14-.6.62-.71 1.04-.09.31-.2.75-.26 1.27-.12 1-.1 2.4.68 3.58v.01c.83 1.24 1.83 2 2.62 2.46.43.25.88.45 1.3.7a16.38 16.38 0 0 1 8.4 14.34c0 8-5.72 14.66-13.34 16.15a.85.85 0 0 0 .33 1.67c.99-.2 1.95-.47 2.88-.82.23.18.7.55 1.32.94a8.46 8.46 0 0 0 3.38 1.29 5.96 5.96 0 0 0 3.26-.61c.5-.24 1.22-.6 1.43-1.15a.86.86 0 0 0-.04-.72c-.29-.53-.92-1-1.38-1.37a6.88 6.88 0 0 0-2.76-1.39c.49-.4.95-.82 1.39-1.26.56.14 1.12.24 1.7.31 1.03.13 2.43.19 3.67-.2a5.68 5.68 0 0 0 3.32-2.78c.12-.24.22-.53.18-.8a.86.86 0 0 0-.47-.63 9.14 9.14 0 0 0-1.64-.62 6.5 6.5 0 0 0-3.36-.08 18 18 0 0 0 .85-2.04c.4 0 .81-.03 1.21-.1a5.89 5.89 0 0 0 3.14-1.46 7.74 7.74 0 0 0 1.85-3.06c.17-.47.27-.9.33-1.2.07-.32.13-.68-.05-.99-.25-.44-.77-.44-1.22-.42a9.1 9.1 0 0 0-1.24.12c-.9.16-2.06.5-3.04 1.27v-.05c0-.73-.04-1.45-.13-2.15.25-.12.6-.31 1-.59a6.15 6.15 0 0 0 2.11-2.52 8.3 8.3 0 0 0 .57-3.58 9.7 9.7 0 0 0-.14-1.28c-.06-.33-.13-.69-.4-.92a.86.86 0 0 0-.5-.2c-.3-.02-.6.15-.85.28a9.3 9.3 0 0 0-1.08.63 6.63 6.63 0 0 0-2.3 2.58 18 18 0 0 0-1.26-2.24 5.46 5.46 0 0 0 1.82-3.63 8.85 8.85 0 0 0-.65-3.65c-.19-.5-.38-.9-.53-1.2-.21-.4-.47-.85-1-.85a.98.98 0 0 0-.64.3c-.2.18-.65.6-1.11 1.19a6.34 6.34 0 0 0-1.4 3.91c-.72-.6-1.47-1.13-2.27-1.62A5.47 5.47 0 0 0 32.88 7h-.01Zm-3.86-1.7a7.29 7.29 0 0 1 2.35 2.46 4 4 0 0 1 .29 2.44 5.96 5.96 0 0 1-2.29-2.06c-.54-.83-.53-1.9-.35-2.84Zm12.55 25.44c.17-.96.56-1.94 1.28-2.63A5.1 5.1 0 0 1 45.68 27a6.1 6.1 0 0 1-1.53 2.7c-.7.66-1.65.97-2.6 1.06Zm-3.37 7.13a4.55 4.55 0 0 1 2.18-1.66 5 5 0 0 1 3.2.19 4.02 4.02 0 0 1-1.97 1.4 7.6 7.6 0 0 1-3.4.07ZM32 42.86a4.57 4.57 0 0 1 2.66-.67c.89.1 1.73.58 2.38 1.1l.4.34a4.54 4.54 0 0 1-2.42.5A6.93 6.93 0 0 1 32 42.86Zm6.41-33.3a7.2 7.2 0 0 1 .7 3.29 3.68 3.68 0 0 1-1.07 2.3 4.88 4.88 0 0 1-.87-2.93c.07-1 .6-1.91 1.24-2.67Zm5.38 7.92a6.57 6.57 0 0 1-.4 3.16 4.55 4.55 0 0 1-1.73 1.95 4.4 4.4 0 0 1 .06-2.91c.4-.95 1.2-1.67 2.07-2.2Zm-19.95.55L22 23.38a1 1 0 0 1-.94.67h-5.71v.02l4.6 3.48a1 1 0 0 1 .34 1.1l-1.66 5.2 4.7-3.25a1 1 0 0 1 1.13 0l4.6 3.17-1.65-5.2a1 1 0 0 1 .35-1.1l4.52-3.42h-5.64a1 1 0 0 1-.94-.67l-1.85-5.35Zm-.03-2.1a2 2 0 0 1 1.88 1.32l1.66 4.8h5.04c1.81 0 2.62 2.28 1.26 3.46l-.06.05-4.07 3.07 1.5 4.72v.01c.56 1.83-1.48 3.13-2.96 2.15l-.02-.01-4.15-2.86-4.25 2.94-.01.01c-1.49.99-3.53-.31-2.97-2.14v-.02l1.5-4.71-4.07-3.08a1.98 1.98 0 0 1-.67-2.18c.22-.71.87-1.41 1.87-1.41h5.05l1.65-4.78a1.88 1.88 0 0 1 1.82-1.33Zm-9.58 20.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.53-1.9a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm-1.2-2.11a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm-.83-2.36a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.42-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm0-2.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.41-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.83-2.25a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.15-2.23a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.59-1.88a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0ZM16.02 15a.83.83 0 1 1-1.65.01.83.83 0 0 1 1.65 0Zm2.08-1.28a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.3-.94a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.38-.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.42-.11a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.48.29a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.33.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.22 1.14a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.92 1.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.75 1.75a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm1.37 2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.03 2.26a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm.6 2.34a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm.22 2.48a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.18 2.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.62 2.35a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.04 2.2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.35 2.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.73 1.78a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.98 1.43a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.19 1.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.28.75a.82.82 0 1 1-1.65 0 .82.82 0 0 1 1.65 0Zm-2.43.31a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.48-.12a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.43-.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.25-.99a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.26-1.16a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0ZM14.94 7a8.85 8.85 0 0 1 2.49-2.79 10.5 10.5 0 0 1 1.41-.92c.23-.12.5-.18.74-.1.46.14.6.62.71 1.04.1.31.2.75.26 1.27.12 1 .1 2.4-.68 3.58v.01a7.82 7.82 0 0 1-2.62 2.46c-.43.25-.88.45-1.3.7a16.38 16.38 0 0 0-8.4 14.34c0 8 5.73 14.66 13.34 16.15a.85.85 0 0 1-.33 1.67c-.99-.2-1.95-.47-2.88-.82-.23.18-.7.55-1.32.94a8.46 8.46 0 0 1-3.38 1.29 5.96 5.96 0 0 1-3.26-.61c-.5-.24-1.22-.6-1.43-1.15a.86.86 0 0 1 .04-.72c.29-.53.92-1 1.38-1.37a6.88 6.88 0 0 1 2.76-1.39c-.49-.4-.95-.82-1.39-1.26-.56.14-1.12.24-1.7.31a9.12 9.12 0 0 1-3.67-.2 5.68 5.68 0 0 1-3.32-2.78 1.35 1.35 0 0 1-.18-.8c.02-.1.1-.45.47-.63a9.13 9.13 0 0 1 1.64-.62 6.5 6.5 0 0 1 3.36-.08c-.32-.66-.6-1.34-.85-2.04-.4 0-.81-.03-1.21-.1a5.89 5.89 0 0 1-3.13-1.46 7.74 7.74 0 0 1-1.86-3.06 9.2 9.2 0 0 1-.33-1.2c-.07-.32-.13-.68.05-.99.25-.44.77-.44 1.22-.42.31 0 .75.04 1.24.12.9.16 2.06.5 3.04 1.27v-.05c0-.73.04-1.45.13-2.15-.25-.12-.6-.31-1-.59a6.15 6.15 0 0 1-2.11-2.52 8.22 8.22 0 0 1-.57-3.58c.03-.5.08-.95.14-1.28.06-.33.13-.69.4-.92a.86.86 0 0 1 .5-.2c.3-.02.6.15.85.28.28.14.67.35 1.08.63a6.63 6.63 0 0 1 2.3 2.58 18 18 0 0 1 1.26-2.24 5.46 5.46 0 0 1-1.82-3.63c-.1-1.34.28-2.69.65-3.65.19-.5.38-.9.53-1.2.21-.4.47-.85 1-.85.25 0 .45.13.64.3.2.18.65.6 1.11 1.19a6.34 6.34 0 0 1 1.4 3.91c.72-.6 1.47-1.13 2.27-1.62A5.47 5.47 0 0 1 14.93 7h.01Zm3.86-1.7a7.29 7.29 0 0 0-2.35 2.46 4.04 4.04 0 0 0-.29 2.44 5.96 5.96 0 0 0 2.29-2.06c.54-.83.53-1.9.35-2.84ZM6.25 30.75a4.77 4.77 0 0 0-1.28-2.63A5.1 5.1 0 0 0 2.13 27c.3.99.77 1.98 1.53 2.7.7.66 1.65.97 2.6 1.06Zm3.37 7.13a4.55 4.55 0 0 0-2.18-1.66 5 5 0 0 0-3.2.19 4.1 4.1 0 0 0 1.97 1.4c1.09.34 2.3.25 3.4.07Zm6.19 4.98a4.57 4.57 0 0 0-2.66-.67c-.89.1-1.73.58-2.38 1.1l-.4.34a4.54 4.54 0 0 0 2.42.5 6.93 6.93 0 0 0 3.02-1.27ZM9.4 9.56a7.26 7.26 0 0 0-.7 3.29 3.68 3.68 0 0 0 1.07 2.3c.55-.87.94-1.89.87-2.93A4.8 4.8 0 0 0 9.4 9.55Zm-5.38 7.92a6.57 6.57 0 0 0 .4 3.16 4.55 4.55 0 0 0 1.73 1.95c.26-.94.34-2-.06-2.91a4.99 4.99 0 0 0-2.07-2.2Z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div class="ms-4">
-                                            <p class="m-0 pStyleForHead">867</p>
-                                            <p class="m-0 pStyleFontSize12">golden badger</p>
-                                        </div>
-                                    </div>
-                                    <div class="badger-detail mt-3 d-flex flex-column gap-2">
-                                        <div class="badg-det-1 d-flex justify-content-between">
-                                            <div class="icon-title d-flex border px-2 py-1">
-                                                <div class="discGold "></div>
-                                                 delegates
-                                            </div>
-                                            <div class="badg-date">April 6, 2011</div>
-                                        </div>
-                                        <div class="badg-det-1 d-flex justify-content-between">
-                                            <div class="icon-title d-flex border px-2 py-1">
-                                                <div class="discGold"></div>
-                                                 inheritance
-                                            </div>
-                                            <div class="badg-date">Nov 12, 2011</div>
-                                        </div>
-                                        <div class="badg-det-1 d-flex justify-content-between">
-                                            <div class="icon-title d-flex border px-2 py-1">
-                                                <div class="discGold"></div>
-                                           	 events
-                                            </div>
-                                            <div class="badg-date">Jan 22, 2013</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="b-c-1 card p-3 col-sm-6 mt-sm-0 mt-3">
-                                    <div class="badger-icon d-flex">
-                                        <div>
-                                            <svg aria-hidden="true" class="fc-gold svg-spot spotAward" width="48"
-                                                height="48" viewBox="0 0 48 48">
-                                                <path fill="#C0C0C0"
-                                                    d="M32.87 7a8.85 8.85 0 0 0-2.49-2.79 10.5 10.5 0 0 0-1.41-.92.98.98 0 0 0-.74-.1c-.46.14-.6.62-.71 1.04-.09.31-.2.75-.26 1.27-.12 1-.1 2.4.68 3.58v.01c.83 1.24 1.83 2 2.62 2.46.43.25.88.45 1.3.7a16.38 16.38 0 0 1 8.4 14.34c0 8-5.72 14.66-13.34 16.15a.85.85 0 0 0 .33 1.67c.99-.2 1.95-.47 2.88-.82.23.18.7.55 1.32.94a8.46 8.46 0 0 0 3.38 1.29 5.96 5.96 0 0 0 3.26-.61c.5-.24 1.22-.6 1.43-1.15a.86.86 0 0 0-.04-.72c-.29-.53-.92-1-1.38-1.37a6.88 6.88 0 0 0-2.76-1.39c.49-.4.95-.82 1.39-1.26.56.14 1.12.24 1.7.31 1.03.13 2.43.19 3.67-.2a5.68 5.68 0 0 0 3.32-2.78c.12-.24.22-.53.18-.8a.86.86 0 0 0-.47-.63 9.14 9.14 0 0 0-1.64-.62 6.5 6.5 0 0 0-3.36-.08 18 18 0 0 0 .85-2.04c.4 0 .81-.03 1.21-.1a5.89 5.89 0 0 0 3.14-1.46 7.74 7.74 0 0 0 1.85-3.06c.17-.47.27-.9.33-1.2.07-.32.13-.68-.05-.99-.25-.44-.77-.44-1.22-.42a9.1 9.1 0 0 0-1.24.12c-.9.16-2.06.5-3.04 1.27v-.05c0-.73-.04-1.45-.13-2.15.25-.12.6-.31 1-.59a6.15 6.15 0 0 0 2.11-2.52 8.3 8.3 0 0 0 .57-3.58 9.7 9.7 0 0 0-.14-1.28c-.06-.33-.13-.69-.4-.92a.86.86 0 0 0-.5-.2c-.3-.02-.6.15-.85.28a9.3 9.3 0 0 0-1.08.63 6.63 6.63 0 0 0-2.3 2.58 18 18 0 0 0-1.26-2.24 5.46 5.46 0 0 0 1.82-3.63 8.85 8.85 0 0 0-.65-3.65c-.19-.5-.38-.9-.53-1.2-.21-.4-.47-.85-1-.85a.98.98 0 0 0-.64.3c-.2.18-.65.6-1.11 1.19a6.34 6.34 0 0 0-1.4 3.91c-.72-.6-1.47-1.13-2.27-1.62A5.47 5.47 0 0 0 32.88 7h-.01Zm-3.86-1.7a7.29 7.29 0 0 1 2.35 2.46 4 4 0 0 1 .29 2.44 5.96 5.96 0 0 1-2.29-2.06c-.54-.83-.53-1.9-.35-2.84Zm12.55 25.44c.17-.96.56-1.94 1.28-2.63A5.1 5.1 0 0 1 45.68 27a6.1 6.1 0 0 1-1.53 2.7c-.7.66-1.65.97-2.6 1.06Zm-3.37 7.13a4.55 4.55 0 0 1 2.18-1.66 5 5 0 0 1 3.2.19 4.02 4.02 0 0 1-1.97 1.4 7.6 7.6 0 0 1-3.4.07ZM32 42.86a4.57 4.57 0 0 1 2.66-.67c.89.1 1.73.58 2.38 1.1l.4.34a4.54 4.54 0 0 1-2.42.5A6.93 6.93 0 0 1 32 42.86Zm6.41-33.3a7.2 7.2 0 0 1 .7 3.29 3.68 3.68 0 0 1-1.07 2.3 4.88 4.88 0 0 1-.87-2.93c.07-1 .6-1.91 1.24-2.67Zm5.38 7.92a6.57 6.57 0 0 1-.4 3.16 4.55 4.55 0 0 1-1.73 1.95 4.4 4.4 0 0 1 .06-2.91c.4-.95 1.2-1.67 2.07-2.2Zm-19.95.55L22 23.38a1 1 0 0 1-.94.67h-5.71v.02l4.6 3.48a1 1 0 0 1 .34 1.1l-1.66 5.2 4.7-3.25a1 1 0 0 1 1.13 0l4.6 3.17-1.65-5.2a1 1 0 0 1 .35-1.1l4.52-3.42h-5.64a1 1 0 0 1-.94-.67l-1.85-5.35Zm-.03-2.1a2 2 0 0 1 1.88 1.32l1.66 4.8h5.04c1.81 0 2.62 2.28 1.26 3.46l-.06.05-4.07 3.07 1.5 4.72v.01c.56 1.83-1.48 3.13-2.96 2.15l-.02-.01-4.15-2.86-4.25 2.94-.01.01c-1.49.99-3.53-.31-2.97-2.14v-.02l1.5-4.71-4.07-3.08a1.98 1.98 0 0 1-.67-2.18c.22-.71.87-1.41 1.87-1.41h5.05l1.65-4.78a1.88 1.88 0 0 1 1.82-1.33Zm-9.58 20.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.53-1.9a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm-1.2-2.11a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm-.83-2.36a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.42-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm0-2.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.41-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.83-2.25a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.15-2.23a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.59-1.88a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0ZM16.02 15a.83.83 0 1 1-1.65.01.83.83 0 0 1 1.65 0Zm2.08-1.28a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.3-.94a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.38-.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.42-.11a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.48.29a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.33.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.22 1.14a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.92 1.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.75 1.75a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm1.37 2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.03 2.26a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm.6 2.34a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm.22 2.48a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.18 2.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.62 2.35a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.04 2.2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.35 2.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.73 1.78a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.98 1.43a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.19 1.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.28.75a.82.82 0 1 1-1.65 0 .82.82 0 0 1 1.65 0Zm-2.43.31a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.48-.12a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.43-.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.25-.99a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.26-1.16a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0ZM14.94 7a8.85 8.85 0 0 1 2.49-2.79 10.5 10.5 0 0 1 1.41-.92c.23-.12.5-.18.74-.1.46.14.6.62.71 1.04.1.31.2.75.26 1.27.12 1 .1 2.4-.68 3.58v.01a7.82 7.82 0 0 1-2.62 2.46c-.43.25-.88.45-1.3.7a16.38 16.38 0 0 0-8.4 14.34c0 8 5.73 14.66 13.34 16.15a.85.85 0 0 1-.33 1.67c-.99-.2-1.95-.47-2.88-.82-.23.18-.7.55-1.32.94a8.46 8.46 0 0 1-3.38 1.29 5.96 5.96 0 0 1-3.26-.61c-.5-.24-1.22-.6-1.43-1.15a.86.86 0 0 1 .04-.72c.29-.53.92-1 1.38-1.37a6.88 6.88 0 0 1 2.76-1.39c-.49-.4-.95-.82-1.39-1.26-.56.14-1.12.24-1.7.31a9.12 9.12 0 0 1-3.67-.2 5.68 5.68 0 0 1-3.32-2.78 1.35 1.35 0 0 1-.18-.8c.02-.1.1-.45.47-.63a9.13 9.13 0 0 1 1.64-.62 6.5 6.5 0 0 1 3.36-.08c-.32-.66-.6-1.34-.85-2.04-.4 0-.81-.03-1.21-.1a5.89 5.89 0 0 1-3.13-1.46 7.74 7.74 0 0 1-1.86-3.06 9.2 9.2 0 0 1-.33-1.2c-.07-.32-.13-.68.05-.99.25-.44.77-.44 1.22-.42.31 0 .75.04 1.24.12.9.16 2.06.5 3.04 1.27v-.05c0-.73.04-1.45.13-2.15-.25-.12-.6-.31-1-.59a6.15 6.15 0 0 1-2.11-2.52 8.22 8.22 0 0 1-.57-3.58c.03-.5.08-.95.14-1.28.06-.33.13-.69.4-.92a.86.86 0 0 1 .5-.2c.3-.02.6.15.85.28.28.14.67.35 1.08.63a6.63 6.63 0 0 1 2.3 2.58 18 18 0 0 1 1.26-2.24 5.46 5.46 0 0 1-1.82-3.63c-.1-1.34.28-2.69.65-3.65.19-.5.38-.9.53-1.2.21-.4.47-.85 1-.85.25 0 .45.13.64.3.2.18.65.6 1.11 1.19a6.34 6.34 0 0 1 1.4 3.91c.72-.6 1.47-1.13 2.27-1.62A5.47 5.47 0 0 1 14.93 7h.01Zm3.86-1.7a7.29 7.29 0 0 0-2.35 2.46 4.04 4.04 0 0 0-.29 2.44 5.96 5.96 0 0 0 2.29-2.06c.54-.83.53-1.9.35-2.84ZM6.25 30.75a4.77 4.77 0 0 0-1.28-2.63A5.1 5.1 0 0 0 2.13 27c.3.99.77 1.98 1.53 2.7.7.66 1.65.97 2.6 1.06Zm3.37 7.13a4.55 4.55 0 0 0-2.18-1.66 5 5 0 0 0-3.2.19 4.1 4.1 0 0 0 1.97 1.4c1.09.34 2.3.25 3.4.07Zm6.19 4.98a4.57 4.57 0 0 0-2.66-.67c-.89.1-1.73.58-2.38 1.1l-.4.34a4.54 4.54 0 0 0 2.42.5 6.93 6.93 0 0 0 3.02-1.27ZM9.4 9.56a7.26 7.26 0 0 0-.7 3.29 3.68 3.68 0 0 0 1.07 2.3c.55-.87.94-1.89.87-2.93A4.8 4.8 0 0 0 9.4 9.55Zm-5.38 7.92a6.57 6.57 0 0 0 .4 3.16 4.55 4.55 0 0 0 1.73 1.95c.26-.94.34-2-.06-2.91a4.99 4.99 0 0 0-2.07-2.2Z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div class="ms-4">
-                                            <p class="m-0 pStyleForHead">9,122
-                                            </p>
-                                            <p class="m-0 pStyleFontSize12">silver badger</p>
-                                        </div>
-                                    </div>
-                                    <div class="badger-detail mt-3 d-flex flex-column gap-2">
-                                        <div class="badg-det-1 d-flex justify-content-between">
-                                            <div class="icon-title d-flex border px-2 py-1">
-                                                <div class="discSilver "></div>
-                                                 .net-2.0
-                                            </div>
-                                            <div class="badg-date">Jun 19, 2019</div>
-                                        </div>
-                                        <div class="badg-det-1 d-flex justify-content-between">
-                                            <div class="icon-title d-flex border px-2 py-1">
-                                                <div class="discSilver"></div>
-                                                coding-style
-                                            </div>
-                                            <div class="badg-date">Jul 10, 2014</div>
-                                        </div>
-                                        <div class="badg-det-1 d-flex justify-content-between">
-                                            <div class="icon-title d-flex border px-2 py-1">
-                                                <div class="discSilver"></div>
-                                                 parameters
-                                            </div>
-                                            <div class="badg-date">Aug 02, 2015</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="b-c-1 card p-3 col-xl-4 ms-xl-1 mt-xl-0 mt-3 ">
-                                <div class="badger-icon d-flex">
-                                    <div>
-                                        <svg aria-hidden="true" class="fc-gold svg-spot spotAward" width="48"
-                                            height="48" viewBox="0 0 48 48">
-                                            <path fill="#CD7F32"
-                                                d="M32.87 7a8.85 8.85 0 0 0-2.49-2.79 10.5 10.5 0 0 0-1.41-.92.98.98 0 0 0-.74-.1c-.46.14-.6.62-.71 1.04-.09.31-.2.75-.26 1.27-.12 1-.1 2.4.68 3.58v.01c.83 1.24 1.83 2 2.62 2.46.43.25.88.45 1.3.7a16.38 16.38 0 0 1 8.4 14.34c0 8-5.72 14.66-13.34 16.15a.85.85 0 0 0 .33 1.67c.99-.2 1.95-.47 2.88-.82.23.18.7.55 1.32.94a8.46 8.46 0 0 0 3.38 1.29 5.96 5.96 0 0 0 3.26-.61c.5-.24 1.22-.6 1.43-1.15a.86.86 0 0 0-.04-.72c-.29-.53-.92-1-1.38-1.37a6.88 6.88 0 0 0-2.76-1.39c.49-.4.95-.82 1.39-1.26.56.14 1.12.24 1.7.31 1.03.13 2.43.19 3.67-.2a5.68 5.68 0 0 0 3.32-2.78c.12-.24.22-.53.18-.8a.86.86 0 0 0-.47-.63 9.14 9.14 0 0 0-1.64-.62 6.5 6.5 0 0 0-3.36-.08 18 18 0 0 0 .85-2.04c.4 0 .81-.03 1.21-.1a5.89 5.89 0 0 0 3.14-1.46 7.74 7.74 0 0 0 1.85-3.06c.17-.47.27-.9.33-1.2.07-.32.13-.68-.05-.99-.25-.44-.77-.44-1.22-.42a9.1 9.1 0 0 0-1.24.12c-.9.16-2.06.5-3.04 1.27v-.05c0-.73-.04-1.45-.13-2.15.25-.12.6-.31 1-.59a6.15 6.15 0 0 0 2.11-2.52 8.3 8.3 0 0 0 .57-3.58 9.7 9.7 0 0 0-.14-1.28c-.06-.33-.13-.69-.4-.92a.86.86 0 0 0-.5-.2c-.3-.02-.6.15-.85.28a9.3 9.3 0 0 0-1.08.63 6.63 6.63 0 0 0-2.3 2.58 18 18 0 0 0-1.26-2.24 5.46 5.46 0 0 0 1.82-3.63 8.85 8.85 0 0 0-.65-3.65c-.19-.5-.38-.9-.53-1.2-.21-.4-.47-.85-1-.85a.98.98 0 0 0-.64.3c-.2.18-.65.6-1.11 1.19a6.34 6.34 0 0 0-1.4 3.91c-.72-.6-1.47-1.13-2.27-1.62A5.47 5.47 0 0 0 32.88 7h-.01Zm-3.86-1.7a7.29 7.29 0 0 1 2.35 2.46 4 4 0 0 1 .29 2.44 5.96 5.96 0 0 1-2.29-2.06c-.54-.83-.53-1.9-.35-2.84Zm12.55 25.44c.17-.96.56-1.94 1.28-2.63A5.1 5.1 0 0 1 45.68 27a6.1 6.1 0 0 1-1.53 2.7c-.7.66-1.65.97-2.6 1.06Zm-3.37 7.13a4.55 4.55 0 0 1 2.18-1.66 5 5 0 0 1 3.2.19 4.02 4.02 0 0 1-1.97 1.4 7.6 7.6 0 0 1-3.4.07ZM32 42.86a4.57 4.57 0 0 1 2.66-.67c.89.1 1.73.58 2.38 1.1l.4.34a4.54 4.54 0 0 1-2.42.5A6.93 6.93 0 0 1 32 42.86Zm6.41-33.3a7.2 7.2 0 0 1 .7 3.29 3.68 3.68 0 0 1-1.07 2.3 4.88 4.88 0 0 1-.87-2.93c.07-1 .6-1.91 1.24-2.67Zm5.38 7.92a6.57 6.57 0 0 1-.4 3.16 4.55 4.55 0 0 1-1.73 1.95 4.4 4.4 0 0 1 .06-2.91c.4-.95 1.2-1.67 2.07-2.2Zm-19.95.55L22 23.38a1 1 0 0 1-.94.67h-5.71v.02l4.6 3.48a1 1 0 0 1 .34 1.1l-1.66 5.2 4.7-3.25a1 1 0 0 1 1.13 0l4.6 3.17-1.65-5.2a1 1 0 0 1 .35-1.1l4.52-3.42h-5.64a1 1 0 0 1-.94-.67l-1.85-5.35Zm-.03-2.1a2 2 0 0 1 1.88 1.32l1.66 4.8h5.04c1.81 0 2.62 2.28 1.26 3.46l-.06.05-4.07 3.07 1.5 4.72v.01c.56 1.83-1.48 3.13-2.96 2.15l-.02-.01-4.15-2.86-4.25 2.94-.01.01c-1.49.99-3.53-.31-2.97-2.14v-.02l1.5-4.71-4.07-3.08a1.98 1.98 0 0 1-.67-2.18c.22-.71.87-1.41 1.87-1.41h5.05l1.65-4.78a1.88 1.88 0 0 1 1.82-1.33Zm-9.58 20.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.53-1.9a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm-1.2-2.11a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm-.83-2.36a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.42-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm0-2.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.41-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.83-2.25a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.15-2.23a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.59-1.88a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0ZM16.02 15a.83.83 0 1 1-1.65.01.83.83 0 0 1 1.65 0Zm2.08-1.28a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.3-.94a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.38-.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.42-.11a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.48.29a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.33.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.22 1.14a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.92 1.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.75 1.75a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm1.37 2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.03 2.26a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm.6 2.34a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm.22 2.48a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.18 2.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.62 2.35a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.04 2.2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.35 2.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.73 1.78a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.98 1.43a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.19 1.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.28.75a.82.82 0 1 1-1.65 0 .82.82 0 0 1 1.65 0Zm-2.43.31a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.48-.12a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.43-.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.25-.99a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.26-1.16a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0ZM14.94 7a8.85 8.85 0 0 1 2.49-2.79 10.5 10.5 0 0 1 1.41-.92c.23-.12.5-.18.74-.1.46.14.6.62.71 1.04.1.31.2.75.26 1.27.12 1 .1 2.4-.68 3.58v.01a7.82 7.82 0 0 1-2.62 2.46c-.43.25-.88.45-1.3.7a16.38 16.38 0 0 0-8.4 14.34c0 8 5.73 14.66 13.34 16.15a.85.85 0 0 1-.33 1.67c-.99-.2-1.95-.47-2.88-.82-.23.18-.7.55-1.32.94a8.46 8.46 0 0 1-3.38 1.29 5.96 5.96 0 0 1-3.26-.61c-.5-.24-1.22-.6-1.43-1.15a.86.86 0 0 1 .04-.72c.29-.53.92-1 1.38-1.37a6.88 6.88 0 0 1 2.76-1.39c-.49-.4-.95-.82-1.39-1.26-.56.14-1.12.24-1.7.31a9.12 9.12 0 0 1-3.67-.2 5.68 5.68 0 0 1-3.32-2.78 1.35 1.35 0 0 1-.18-.8c.02-.1.1-.45.47-.63a9.13 9.13 0 0 1 1.64-.62 6.5 6.5 0 0 1 3.36-.08c-.32-.66-.6-1.34-.85-2.04-.4 0-.81-.03-1.21-.1a5.89 5.89 0 0 1-3.13-1.46 7.74 7.74 0 0 1-1.86-3.06 9.2 9.2 0 0 1-.33-1.2c-.07-.32-.13-.68.05-.99.25-.44.77-.44 1.22-.42.31 0 .75.04 1.24.12.9.16 2.06.5 3.04 1.27v-.05c0-.73.04-1.45.13-2.15-.25-.12-.6-.31-1-.59a6.15 6.15 0 0 1-2.11-2.52 8.22 8.22 0 0 1-.57-3.58c.03-.5.08-.95.14-1.28.06-.33.13-.69.4-.92a.86.86 0 0 1 .5-.2c.3-.02.6.15.85.28.28.14.67.35 1.08.63a6.63 6.63 0 0 1 2.3 2.58 18 18 0 0 1 1.26-2.24 5.46 5.46 0 0 1-1.82-3.63c-.1-1.34.28-2.69.65-3.65.19-.5.38-.9.53-1.2.21-.4.47-.85 1-.85.25 0 .45.13.64.3.2.18.65.6 1.11 1.19a6.34 6.34 0 0 1 1.4 3.91c.72-.6 1.47-1.13 2.27-1.62A5.47 5.47 0 0 1 14.93 7h.01Zm3.86-1.7a7.29 7.29 0 0 0-2.35 2.46 4.04 4.04 0 0 0-.29 2.44 5.96 5.96 0 0 0 2.29-2.06c.54-.83.53-1.9.35-2.84ZM6.25 30.75a4.77 4.77 0 0 0-1.28-2.63A5.1 5.1 0 0 0 2.13 27c.3.99.77 1.98 1.53 2.7.7.66 1.65.97 2.6 1.06Zm3.37 7.13a4.55 4.55 0 0 0-2.18-1.66 5 5 0 0 0-3.2.19 4.1 4.1 0 0 0 1.97 1.4c1.09.34 2.3.25 3.4.07Zm6.19 4.98a4.57 4.57 0 0 0-2.66-.67c-.89.1-1.73.58-2.38 1.1l-.4.34a4.54 4.54 0 0 0 2.42.5 6.93 6.93 0 0 0 3.02-1.27ZM9.4 9.56a7.26 7.26 0 0 0-.7 3.29 3.68 3.68 0 0 0 1.07 2.3c.55-.87.94-1.89.87-2.93A4.8 4.8 0 0 0 9.4 9.55Zm-5.38 7.92a6.57 6.57 0 0 0 .4 3.16 4.55 4.55 0 0 0 1.73 1.95c.26-.94.34-2-.06-2.91a4.99 4.99 0 0 0-2.07-2.2Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="m-0 pStyleForHead">
-                                            867</p>
-                                        <p class="m-0 pStyleFontSize12">bronze badges</p>
-                                    </div>
-                                </div>
-                                <div class="badger-detail mt-3 d-flex flex-column gap-2">
-                                    <div class="badg-det-1 d-flex justify-content-between">
-                                        <div class="icon-title d-flex border px-2 py-1">
-                                            <div class="disc "></div>
-                                          generic-list
-                                        </div>
-                                        <div class="badg-date">May 6, 2012</div>
-                                    </div>
-                                    <div class="badg-det-1 d-flex justify-content-between">
-                                        <div class="icon-title d-flex border px-2 py-1">
-                                            <div class="disc"></div>
-                                             xmldocument
-                                        </div>
-                                        <div class="badg-date">Dec 12, 2011</div>
-                                    </div>
-                                    <div class="badg-det-1  d-flex justify-content-between">
-                                        <div class="icon-title d-flex border px-2 py-1">
-                                            <div class="disc "></div>
-                                             nullreferenceexception
-                                        </div>
-                                        <div class="badg-date">April 22, 2013</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TOP TAGS -->
-                    <div class="top-tags">
-                        <div class="double-p-head p-head-size d-flex justify-content-between ">
-                            <h3>Top tags</h3>
-                            <p  class="p mt-1">View all tags</a>
-                        </div>
-                        <div class="tag-container  d-flex flex-column gap-2 border rounded">
-                            <div class="single-tag d-flex justify-content-between border-bottom p-3">
-                                <div class="tag-right d-flex">
-                                    <div class="topTags">c#</div>
-                                    <div class="discGold"></div>
-                                </div>
-                                <div class="tag-left d-flex justify-content-between">
-                                    <div class="left-tag-p d-flex ">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">262,733</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">score</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">19954</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">posts</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">56</p>
-                                        <p class="score m-0 ps-1 fs-5">posts %</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-tag d-flex justify-content-between border-bottom p-3">
-                                <div class="tag-right d-flex">
-                                    <div class="topTags">.net</div>
-                                    <div class="discGold"></div>
-                                </div>
-                                <div class="tag-left d-flex justify-content-between">
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">157,122</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">score</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">10,587</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">posts</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">30</p>
-                                        <p class="score m-0 ps-1 fs-5 ">posts %</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-tag d-flex justify-content-between border-bottom p-3">
-                                <div class="tag-right  d-flex">
-                                    <div class="topTags">java</div>
-                                    <div class="discGold"></div>
-                                </div>
-                                <div class="tag-left d-flex justify-content-between">
-                                    <div class="left-tag-p  d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">91,190</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">score</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">5,687</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">posts</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">16</p>
-                                        <p class="score m-0 ps-1 fs-5 ">posts %</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-tag d-flex justify-content-between border-bottom p-3">
-                                <div class="tag-right d-flex">
-                                    <div class="topTags">linq</div>
-                                    <div class="discGold"></div>
-                                </div>
-                                <div class="tag-left d-flex justify-content-between">
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">38,029</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">score</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">3,003</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">posts</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">8</p>
-                                        <p class="score m-0 ps-1 fs-5">posts %</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-tag d-flex justify-content-between border-bottom p-3">
-                                <div class="tag-right d-flex">
-                                    <div class="topTags">string</div>
-                                    <div class="discGold"></div>
-                                </div>
-                                <div class="tag-left d-flex justify-content-between">
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">24,548</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">score</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">1,046</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">posts</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">3</p>
-                                        <p class="score m-0 ps-1 fs-5 ">post %</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-tag d-flex justify-content-between border-bottom p-3">
-                                <div class="tag-right d-flex">
-                                    <div class="topTags">generics</div>
-                                    <div class="discGold"></div>
-                                </div>
-                                <div class="tag-left d-flex justify-content-between">
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">22,733</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">score</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">1,958</p>
-                                        <p class="score m-0 ps-1 fs-5 me-2">posts</p>
-                                    </div>
-                                    <div class="left-tag-p d-flex">
-                                        <p class="tag-rate m-0 fs-5 fs-sm-4">4</p>
-                                        <p class="score m-0 ps-1 fs-5">posts %</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TOP post -->
-                    <div class="top-answers">
-                        <div class="double-p-head d-flex justify-content-between row row-cols-1 row-cols-xl-2 ">
-                            <div class="top-ans-h-r col ">
-                                <h3 class="p-head-font m-0">Top posts</h3>
-                                <div>View all <a href="#">questions</a>,<a href="#"> answers </a>, and <a
-                                        href="#">articles</a>
-                                </div>
-                            </div>
-                            <div class="top-ans-h-l tag-right d-flex justify-content-between h-25 col mt-2 mb-1">
-                                <div class="d-flex border rounded">
-                                    <div class="border-end p-2">All</div>
-                                    <div class="border-end p-2">Questions</div>
-                                    <div class="border-end p-2">Answers</div>
-                                   <div class="border-end p-2">Articles</div>
-
-                                </div>
-                                <div class="d-flex border rounded">
-                                    <div class="border-end p-2">Score</div>
-                                     <div class="border-end p-2">Newest</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ans-container  border rounded">
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div class="">
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">11,854</div>
-                                    <div><a href="#" class="anssub ">Why is subtracting
-                                            these two epoch-milli
-                                            Times (in year 1927) giving astrange result?</a></div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">jun 27, 2015</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div>
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">5,854</div>
-                                    <div><a href="#" class="anssub">Why is char[] preferred over String for
-                                            passwords?</a></div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">jan 27, 2013</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div>
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="#9fa6ad"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDiv">5,154</div>
-                                    <div><a href="#" class="anssub">What is the difference between String and string in
-                                            C#?</a></div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">Oct 27, 2008</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div>
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">4,854</div>
-                                    <div><a href="#" class="anssub">How do I call one constructor from another in
-                                            Java?</a></div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">Nov 27, 2020</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div >
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">5,854</div>
-                                    <div><a href="#" class="anssub">What are the correct version numbers for C#?</a>
-                                    </div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">jan 27, 2013</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div>
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">5,154</div>
-                                    <div><a href="#" class="anssub">What are the correct version numbers for C#?</a>
-                                    </div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">Oct 27, 2008</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div >
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">11,854</div>
-                                    <div><a href="#" class="anssub">How do I break out of nested loops in Java?</a>
-                                    </div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">jun 27, 2015</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div>
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">5,854</div>
-                                    <div><a href="#" class="anssub">What is a serialVersionUID and why should I use
-                                            it?</a></div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">jan 27, 2013</div>
-                            </div>
-                            <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
-                                <div class="d-flex justify-content-start">
-                                    <div >
-                                        <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
-                                            <title>answer</title>
-                                            <path fill="hsl(148,70%,31%)"
-                                                d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="topPostDivbg">5,154</div>
-                                    <div><a href="#" class="anssub">Difference between decimal, float and double in
-                                            .NET?</a></div>
-                                </div>
-                                <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4">Oct 27, 2008</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- META POST -->
-                    <div class="top-meta-post">
-                        <div class="double-p-head p-head-size d-flex justify-content-between">
-                            <h3>Top meta post</h3>
-                            <div class="tag-left meta-icon d-flex gap-2 text-secondary">
-                                <div>
-                                    <svg aria-hidden="true" class="svg-icon iconQuestion" width="18" height="18"
-                                        viewBox="0 0 18 18">
-                                        <path fill="#6A737C"
-                                            d="m4 15-3 3V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v9c0 1.09-.91 2-2 2H4Zm7.75-3.97c.72-.83.98-1.86.98-2.94 0-1.65-.7-3.22-2.3-3.83a4.41 4.41 0 0 0-3.02 0 3.8 3.8 0 0 0-2.32 3.83c0 1.29.35 2.29 1.03 3a3.8 3.8 0 0 0 2.85 1.07c.62 0 1.2-.11 1.71-.34.65.44 1 .68 1.06.7.23.13.46.23.7.3l.59-1.13a5.2 5.2 0 0 1-1.28-.66Zm-1.27-.9a5.4 5.4 0 0 0-1.5-.8l-.45.9c.33.12.66.29.98.5-.2.07-.42.11-.65.11-.61 0-1.12-.23-1.52-.68-.86-1-.86-3.12 0-4.11.8-.9 2.35-.9 3.15 0 .9 1.01.86 3.03-.01 4.08Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <p>3</p>
-                                <div>
-                                    <svg aria-hidden="true" class="svg-icon iconAnswer" width="18" height="18"
-                                        viewBox="0 0 18 18">
-                                        <path fill="#6A737C"
-                                            d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <p>22</p>
-                            </div>
-                        </div>
-                        <div class="meta-cointainer border-dark-subtle border rounded ">
-                            <div class="sig-meta-card d-flex p-3 border-bottom">
-                                <img src="assets/Metatable.png" alt="meta" class="beta">
-                                <div class="topPostDiv">944</div>
-                                <div><a href="#" class="lh-base">Congratulations for reaching a million, Gordon
-                                        Linoff!</a></div>
-                            </div>
-                            <div class="sig-meta-card d-flex p-3 border-bottom">
-                                <img src="assets/Metatable.png" alt="meta" class="beta">
-                                <div class="topPostDiv">854</div>
-                                <div><a href="#" class="lh-base">Stack Overflow question checklist</a></div>
-                            </div>
-                            <div class="sig-meta-card d-flex p-3 border-bottom">
-                                <img src="assets/Metatable.png" alt="meta" class="beta">
-                                <div class="topPostDiv">823</div>
-                                <div><a href="#" class="lh-base">Are we being "elitist"? Is there something wrong with
-                                        that?</a></div>
-                            </div>
-                            <div class="sig-meta-card d-flex p-3 border-bottom">
-                                <img src="assets/Metatable.png" alt="meta" class="beta">
-                                <div class="topPostDiv">784</div>
-                                <div><a href="#" class="lh-base">What should I do about a user that I'm trying to help
-                                        and is calling me
-                                        stupid</a></div>
-                            </div>
-                            <div class="sig-meta-card d-flex p-3 border-bottom">
-                                <img src="assets/Metatable.png" alt="meta" class="beta">
-                                <div class="topPostDiv">721</div>
-                                <div><a href="#" class="lh-base">Who's the person with more answers than Jon Skeet? When
-                                        will they catch him
-                                        in rep
-                                        terms?</a></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- NET POST -->
-                    <div class="top-net-posts">
-                        <div class="double-p-head p-head-size d-flex justify-content-between ">
-                            <h3>Top network posts</h3>
-                            <p>View all network posts</p>
-                        </div>
-                        <div class="meta-cointainer border border-dark-subtle rounded ">
-                            <div class="sig-meta-card p-3 d-flex border-bottom">
-                                <img src="assets/meta.png" alt="meta" class="meta">
-                                <div class="topPostDiv">844</div>
-                                <div><a href="#" class="linkSyle">Allow an edit to notify downvoters: "I think I've fixed
-                                        the issue now -
-                                        please
-                                        check"</a></div>
-                            </div>
-                            <div class="sig-meta-card p-3 d-flex border-bottom">
-                                <img src="assets/meta.png" alt="meta" class="meta">
-                                <div class="topPostDiv">654</div>
-                                <div><a href="#" class="netsub">Jon Skeet Facts</a></div>
-                            </div>
-                            <div class="sig-meta-card p-3 d-flex border-bottom">
-                                <img src="assets/meta.png" alt="meta" class="meta">
-                                <div class="topPostDiv">423</div>
-                                <div><a href="#" class="netsub">Should 'Hi', 'thanks', taglines, and salutations be
-                                        removed from
-                                        posts?</a>
-                                </div>
-                            </div>
-                            <div class="sig-meta-card p-3 d-flex border-bottom">
-                                <img src="assets/server.PNG" alt="meta" class="meta">
-                                <div class="topPostDiv">284</div>
-                                <div><a href="#" class="netsub">Shell command to monitor changes in a file</a></div>
-                            </div>
-                            <div class="sig-meta-card p-3 d-flex border-bottom">
-                                <img src="assets/meta.png" alt="meta" class="meta">
-                                <div class="topPostDiv">121</div>
-                                <div><a href="#" class="netsub">Please show us when we lose an accepted answer</a></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- COLLECTIVES -->
-                    <div class="d-block d-lg-none ">
-                        <h3 class="c-title ">Collectives</h3>
-                        <div class="detail-card2 card p-2 ps-3">
-                            <a href="https://stackoverflow.com/collectives/google-cloud" style="text-decoration: none;"
-                                class="d-flex">
-                                <img src="assets/cloud.png" alt="cloud" class="">
-                                <div>
-                                    <p class="mb-0 pStyleFontSize15">Google Cloud</p>
-                                    <p class="pStyleFontSize12"> 2021 . Employee</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- COMMUNITY -->
-                    <div class="d-block d-lg-none ">
-                        <div class="community  d-flex justify-content-between">
-                            <h3 class="c-title">Communities</h3>
-                            <div class="com-view d-flex align-center lh-lg">
-                                <p>View all</p>
-                                <svg aria-hidden="true" class="svg-icon iconShareSm m-2" width="14" height="14" viewBox="0 0 14 14"><path d="M5 1H3a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V9h-2v2H3V3h2V1Zm2 0h6v6h-2V4.5L6.5 9 5 7.5 9.5 3H7V1Z"></path></svg>
-                            </div>
-                        </div>
-                        <div class="detail-card3 card p-3 ">
-                            <div class=" d-flex flex-column gap-0">
-                                <div class="card3-list d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-start gap-4">
-                                        <img src="assets/stack-overflow.png" alt="stack" class="imgSize">
-                                        <a href="https://stackoverflow.com/users/22656/jon-skeet"
-                                            title="Stack Overflow">Stack
-                                            Overflow</a>
-                                    </div>
-                                    <p>1.4m</p>
-                                </div>
-                                <div class="card3-list d-flex justify-content-between">
-                                    <div class="d-flex justify-content-start gap-4">
-                                        <img src="assets/meta.png" alt="stack" class="imgSize">
-                                        <a href="https://meta.stackexchange.com/users/22656/jon-skeet">Meta Stack
-                                            Exchange</a>
-                                    </div>
-                                    <p>93.6k</p>
-                                </div>
-                                <div class="card3-list d-flex justify-content-between">
-                                    <div class="d-flex justify-content-start gap-4">
-                                        <img src="assets/superuser.png" alt="stack" class="imgSize">
-                                        <a href="https://superuser.com/users/410/jon-skeet">Super User</a>
-                                    </div>
-                                    <p>5.1k</p>
-                                </div>
-                                <div class="card3-list d-flex justify-content-between">
-                                    <div class="d-flex justify-content-start gap-4">
-                                        <img src="assets/server.png" alt="stack" class="imgSize">
-                                        <a href="https://serverfault.com/users/173/jon-skeet">Server Fault</a>
-
-                                    </div>
-                                    <p>4.6k</p>
-                                </div>
-                                <div class="card3-list d-flex justify-content-between">
-                                    <div class="d-flex justify-content-start gap-4">
-                                        <img src="assets/soft.png" alt="stack" class="imgSize">
-                                        <a href="https://softwareengineering.stackexchange.com/users/8958/jon-skeet">Software
-                                            Engineering</a>
-                                    </div>
-                                    <p>3.6k</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="p-4 flex-wrap container-fluid ">
-        <div class="footer d-lg-flex justify-content-between">
-            <div class="d-lg-flex  justify-content-start m-0 p-0">
-                <div class="footer-icon d-none d-md-block me-lg-4 mb-4">
-                    <a href="https://stackoverflow.com" aria-label="Stack Overflow">
-                        <svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37"
-                            viewBox="0 0 32 37">
-                            <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
-                            <path
-                                d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z"
-                                fill="#F48024"></path>
+                     </div>
+                     <div class="ms-3">
+                        <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18"
+                           viewBox="0 0 18 18">
+                           <path fill="#3B4045"
+                              d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z">
+                           </path>
                         </svg>
-                    </a>
-                </div>
-
-                <div class="footer-nav d-flex flex-column gap-4 flex-lg-row gap-lg-4 ">
-                    <div class="stack-of overflow ps-lg-4  ps-xl-5">
-                        <h5 class="foot-title"><p class="footerHead">STACK OVERFLOW</p></h5>
-                        <ul class="d-flex gap-2 flex-lg-column p-0 m-0 flex-wrap">
-                            <li><p>Questions</p></li>
-                            <li><p>Help</p></li>
-                        </ul>
-                    </div>
-                    <div class="stack-of ps-xl-5 ps-lg-4">
-                        <h5 class="foot-title product"><p class="footerHead">PRODUCTS</p></h5>
-                        <ul class="d-flex gap-2  flex-lg-column p-0 m-0  flex-wrap">
-                            <li><p>Teams</p></li>
-                            <li><p>Advertising</p></li>
-                            <li><p>Collective</p></li>
-                            <li><p>Talent</p></li>
-                        </ul>
-                    </div>
-                    <div class="stack-of  ps-xl-5 ps-lg-4">
-                        <h5 class="foot-title foot-company"><p class="footerHead ">COMPANY</p></h5>
-                        <ul class="d-flex gap-2  flex-lg-column p-0 m-0 flex-wrap">
-                            <li><p>About</p></li>
-                            <li><p>Press</p></li>
-                            <li><p>Work Here</p></li>
-                            <li><p>Legal</p></li>
-                            <li><p>Privacy policy</p></li>
-                            <li><p>Teams</p></li>
-                            <li><p>Terms of Service</p></li>
-                            <li><p>Contact Us</p></li>
-                            <li><p>Cookie Settings</p></li>
-                            <li><p>Cookie Policy</p></li>
-                        </ul>
-                    </div>
-                    <div class="stack-of exchange  ps-xl-5 ps-lg-4">
-                        <h5 class="foot-title"><p class="footerHead">STACK EXCXCHANGE NETWORK</p></h5>
-                        <ul class="d-flex gap-2  flex-lg-column p-0 m-0 flex-wrap">
-                            <li><p>Technology</p></li>
-                            <li><p>Culture & recreation</p></li>
-                            <li><p>Life & arts</p></li>
-                            <li><p>Science</p></li>
-                            <li><p>Professional</p></li>
-                            <li><p>Business</p></li>
-                            <li class="mt-lg-4"><p>API</p></li>
-                            <li><p>Data</p></li>
-                        </ul>
-                    </div>
-                </div>
+                        <div>top <b>0.01</b>% overall</div>
+                     </div>
+                  </div>
+                  <h3 class="mt-3 ">Collectives</h3>
+                  <div class="card p-2 ps-3">
+                     <div class="d-flex">
+                        <img src="assets/cloud.png" alt="cloud" class="h-25 w-25">
+                        <div>
+                           <p class="pStyleFontSize15 mb-0">Google Cloud</p>
+                           <p class="pStyleFontSize12"> 2021 • Member</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="community mt-4 d-flex justify-content-between">
+                     <h3 class="c-title">Communities</h3>
+                     <div class="com-view d-flex align-center">
+                        <p>View all</p>
+                        <svg aria-hidden="true" class="svg-icon iconShareSm m-1" width="14" height="14" viewBox="0 0 14 14">
+                           <path d="M5 1H3a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V9h-2v2H3V3h2V1Zm2 0h6v6h-2V4.5L6.5 9 5 7.5 9.5 3H7V1Z"></path>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="detail-card3 card p-3 ">
+                     <div class=" d-flex flex-column gap-0">
+                        <div class="card3-list d-flex justify-content-between ">
+                           <div class="d-flex">
+                              <img class="d-none d-xl-block imgSize me-2" src="assets/stackIcon.png" alt="stack">
+                              <a href="#" title="Stack Overflow">Stack Overflow</a>
+                           </div>
+                           <p>1.4m</p>
+                        </div>
+                        <div class="card3-list d-flex justify-content-between">
+                           <div class="d-flex">
+                              <img class="d-none d-xl-block imgSize me-2" src="assets/meta.png" alt="stack">
+                              <a href="#">Meta Stack Exchange</a>
+                           </div>
+                           <p>93.6k</p>
+                        </div>
+                        <div class="card3-list d-flex justify-content-between">
+                           <div class="d-flex">
+                              <img class="d-none d-xl-block imgSize me-2" src="assets/super.png" alt="stack">
+                              <a href="#">Super User</a>
+                           </div>
+                           <p>5.1k</p>
+                        </div>
+                        <div class="card3-list d-flex justify-content-between">
+                           <div class="d-flex">
+                              <img class="d-none d-xl-block imgSize me-2" src="assets/server.png" alt="stack">
+                              <a href="#">Server Fault</a>
+                           </div>
+                           <p>4.6k</p>
+                        </div>
+                        <div class="card3-list d-flex justify-content-between">
+                           <div class="d-flex">
+                              <img class="d-none d-xl-block imgSize me-2" src="assets/soft.png" alt="stack">
+                              <a href="#">Software
+                              Engineering</a>
+                           </div>
+                           <p>3.6k</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="right-detailm-0 ms-md-4 col 9 d-flex flex-column gap-4">
+                  <!-- STATUS -->
+                  <div class="d-block d-lg-none m-0">
+                     <h3 class="c-title">Stats</h3>
+                     <div class="card d-flex flex-row p-3 fs-1 row row-cols-sm-5 flex-wrap text-center ">
+                        <div class="c-d1 col ">
+                           <p class="mb-0 fs-sm-4 fs-6 fw-semibold">1,418,816</p>
+                           reputation
+                        </div>
+                        <div class="c-d1 col">
+                           <p class="mb-0 fs-sm-4 fs-6 fw-semibold">400.7m</p>
+                           reached
+                        </div>
+                        <div class="c-d1 col">
+                           <p class="mb-0 fs-sm-4 fs-6 fw-semibold">35,683</p>
+                           answers
+                        </div>
+                        <div class="c-d1 col">
+                           <p class="mb-0 fs-sm-4 fs-6 fw-semibold">55</p>
+                           question
+                        </div>
+                        <div class="col text-start py-sm-0">
+                           <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18"
+                              viewBox="0 0 18 18">
+                              <path fill="#3B4045"
+                                 d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z">
+                              </path>
+                           </svg>
+                           <div>top <b>0.01</b>% overall</div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ABOUT -->
+                  <div class="about mt-lg-1 ">
+                     <h3 class="p-head-size p-head-font">About</h3>
+                     <p class="p-about">Auther of <a href="#" class="aStyle">C# in Depth</a></p>
+                     <p class="p-about">Currently a software engineer at Google, working remotely but near
+                        London.<br>
+                        Usually a Microsoft MVP (C#, 2003-2010, 2011-)
+                     </p>
+                     <p class="p-about">Sites / social:</p>
+                     <ul>
+                        <li>Mastodon: <a href="#" class="aStyle">@jonskeet@hachyderm.io</a></li>
+                        <li><a href="#" class="aStyle">C# in Depth</a></li>
+                        <li><a href="#" class="aStyle">Coding blog</a></li>
+                        <li><a href="#" class="aStyle">C# articles</a></li>
+                        <li>Twitter <a href="#" class="aStyle">@jonskeet</a>
+                        </li>
+                     </ul>
+                     <div  class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-default border border-secondary btn-sm">Read more</button>
+                     </div>
+                  </div>
+                  <!-- BADGES -->
+                  <div class="mt-5">
+                     <div class="double-p-head p-head-size d-flex justify-content-between ">
+                        <h3 class="p-head-font ">Badges</h3>
+                        <p>View all badges</p>
+                     </div>
+                     <div class="badger-container d-xl-flex gap-1">
+                        <div class="d-sm-flex  gap-1 col">
+                           <div class="b-c-1 card p-3 col-sm-6">
+                              <div class="badger-icon d-flex ">
+                                 <div>
+                                    <svg aria-hidden="true" class="fc-gold svg-spot spotAward" width="48"
+                                       height="48" viewBox="0 0 48 48">
+                                       <path fill="#FFD700"
+                                          d="M32.87 7a8.85 8.85 0 0 0-2.49-2.79 10.5 10.5 0 0 0-1.41-.92.98.98 0 0 0-.74-.1c-.46.14-.6.62-.71 1.04-.09.31-.2.75-.26 1.27-.12 1-.1 2.4.68 3.58v.01c.83 1.24 1.83 2 2.62 2.46.43.25.88.45 1.3.7a16.38 16.38 0 0 1 8.4 14.34c0 8-5.72 14.66-13.34 16.15a.85.85 0 0 0 .33 1.67c.99-.2 1.95-.47 2.88-.82.23.18.7.55 1.32.94a8.46 8.46 0 0 0 3.38 1.29 5.96 5.96 0 0 0 3.26-.61c.5-.24 1.22-.6 1.43-1.15a.86.86 0 0 0-.04-.72c-.29-.53-.92-1-1.38-1.37a6.88 6.88 0 0 0-2.76-1.39c.49-.4.95-.82 1.39-1.26.56.14 1.12.24 1.7.31 1.03.13 2.43.19 3.67-.2a5.68 5.68 0 0 0 3.32-2.78c.12-.24.22-.53.18-.8a.86.86 0 0 0-.47-.63 9.14 9.14 0 0 0-1.64-.62 6.5 6.5 0 0 0-3.36-.08 18 18 0 0 0 .85-2.04c.4 0 .81-.03 1.21-.1a5.89 5.89 0 0 0 3.14-1.46 7.74 7.74 0 0 0 1.85-3.06c.17-.47.27-.9.33-1.2.07-.32.13-.68-.05-.99-.25-.44-.77-.44-1.22-.42a9.1 9.1 0 0 0-1.24.12c-.9.16-2.06.5-3.04 1.27v-.05c0-.73-.04-1.45-.13-2.15.25-.12.6-.31 1-.59a6.15 6.15 0 0 0 2.11-2.52 8.3 8.3 0 0 0 .57-3.58 9.7 9.7 0 0 0-.14-1.28c-.06-.33-.13-.69-.4-.92a.86.86 0 0 0-.5-.2c-.3-.02-.6.15-.85.28a9.3 9.3 0 0 0-1.08.63 6.63 6.63 0 0 0-2.3 2.58 18 18 0 0 0-1.26-2.24 5.46 5.46 0 0 0 1.82-3.63 8.85 8.85 0 0 0-.65-3.65c-.19-.5-.38-.9-.53-1.2-.21-.4-.47-.85-1-.85a.98.98 0 0 0-.64.3c-.2.18-.65.6-1.11 1.19a6.34 6.34 0 0 0-1.4 3.91c-.72-.6-1.47-1.13-2.27-1.62A5.47 5.47 0 0 0 32.88 7h-.01Zm-3.86-1.7a7.29 7.29 0 0 1 2.35 2.46 4 4 0 0 1 .29 2.44 5.96 5.96 0 0 1-2.29-2.06c-.54-.83-.53-1.9-.35-2.84Zm12.55 25.44c.17-.96.56-1.94 1.28-2.63A5.1 5.1 0 0 1 45.68 27a6.1 6.1 0 0 1-1.53 2.7c-.7.66-1.65.97-2.6 1.06Zm-3.37 7.13a4.55 4.55 0 0 1 2.18-1.66 5 5 0 0 1 3.2.19 4.02 4.02 0 0 1-1.97 1.4 7.6 7.6 0 0 1-3.4.07ZM32 42.86a4.57 4.57 0 0 1 2.66-.67c.89.1 1.73.58 2.38 1.1l.4.34a4.54 4.54 0 0 1-2.42.5A6.93 6.93 0 0 1 32 42.86Zm6.41-33.3a7.2 7.2 0 0 1 .7 3.29 3.68 3.68 0 0 1-1.07 2.3 4.88 4.88 0 0 1-.87-2.93c.07-1 .6-1.91 1.24-2.67Zm5.38 7.92a6.57 6.57 0 0 1-.4 3.16 4.55 4.55 0 0 1-1.73 1.95 4.4 4.4 0 0 1 .06-2.91c.4-.95 1.2-1.67 2.07-2.2Zm-19.95.55L22 23.38a1 1 0 0 1-.94.67h-5.71v.02l4.6 3.48a1 1 0 0 1 .34 1.1l-1.66 5.2 4.7-3.25a1 1 0 0 1 1.13 0l4.6 3.17-1.65-5.2a1 1 0 0 1 .35-1.1l4.52-3.42h-5.64a1 1 0 0 1-.94-.67l-1.85-5.35Zm-.03-2.1a2 2 0 0 1 1.88 1.32l1.66 4.8h5.04c1.81 0 2.62 2.28 1.26 3.46l-.06.05-4.07 3.07 1.5 4.72v.01c.56 1.83-1.48 3.13-2.96 2.15l-.02-.01-4.15-2.86-4.25 2.94-.01.01c-1.49.99-3.53-.31-2.97-2.14v-.02l1.5-4.71-4.07-3.08a1.98 1.98 0 0 1-.67-2.18c.22-.71.87-1.41 1.87-1.41h5.05l1.65-4.78a1.88 1.88 0 0 1 1.82-1.33Zm-9.58 20.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.53-1.9a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm-1.2-2.11a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm-.83-2.36a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.42-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm0-2.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.41-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.83-2.25a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.15-2.23a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.59-1.88a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0ZM16.02 15a.83.83 0 1 1-1.65.01.83.83 0 0 1 1.65 0Zm2.08-1.28a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.3-.94a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.38-.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.42-.11a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.48.29a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.33.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.22 1.14a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.92 1.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.75 1.75a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm1.37 2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.03 2.26a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm.6 2.34a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm.22 2.48a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.18 2.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.62 2.35a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.04 2.2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.35 2.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.73 1.78a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.98 1.43a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.19 1.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.28.75a.82.82 0 1 1-1.65 0 .82.82 0 0 1 1.65 0Zm-2.43.31a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.48-.12a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.43-.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.25-.99a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.26-1.16a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0ZM14.94 7a8.85 8.85 0 0 1 2.49-2.79 10.5 10.5 0 0 1 1.41-.92c.23-.12.5-.18.74-.1.46.14.6.62.71 1.04.1.31.2.75.26 1.27.12 1 .1 2.4-.68 3.58v.01a7.82 7.82 0 0 1-2.62 2.46c-.43.25-.88.45-1.3.7a16.38 16.38 0 0 0-8.4 14.34c0 8 5.73 14.66 13.34 16.15a.85.85 0 0 1-.33 1.67c-.99-.2-1.95-.47-2.88-.82-.23.18-.7.55-1.32.94a8.46 8.46 0 0 1-3.38 1.29 5.96 5.96 0 0 1-3.26-.61c-.5-.24-1.22-.6-1.43-1.15a.86.86 0 0 1 .04-.72c.29-.53.92-1 1.38-1.37a6.88 6.88 0 0 1 2.76-1.39c-.49-.4-.95-.82-1.39-1.26-.56.14-1.12.24-1.7.31a9.12 9.12 0 0 1-3.67-.2 5.68 5.68 0 0 1-3.32-2.78 1.35 1.35 0 0 1-.18-.8c.02-.1.1-.45.47-.63a9.13 9.13 0 0 1 1.64-.62 6.5 6.5 0 0 1 3.36-.08c-.32-.66-.6-1.34-.85-2.04-.4 0-.81-.03-1.21-.1a5.89 5.89 0 0 1-3.13-1.46 7.74 7.74 0 0 1-1.86-3.06 9.2 9.2 0 0 1-.33-1.2c-.07-.32-.13-.68.05-.99.25-.44.77-.44 1.22-.42.31 0 .75.04 1.24.12.9.16 2.06.5 3.04 1.27v-.05c0-.73.04-1.45.13-2.15-.25-.12-.6-.31-1-.59a6.15 6.15 0 0 1-2.11-2.52 8.22 8.22 0 0 1-.57-3.58c.03-.5.08-.95.14-1.28.06-.33.13-.69.4-.92a.86.86 0 0 1 .5-.2c.3-.02.6.15.85.28.28.14.67.35 1.08.63a6.63 6.63 0 0 1 2.3 2.58 18 18 0 0 1 1.26-2.24 5.46 5.46 0 0 1-1.82-3.63c-.1-1.34.28-2.69.65-3.65.19-.5.38-.9.53-1.2.21-.4.47-.85 1-.85.25 0 .45.13.64.3.2.18.65.6 1.11 1.19a6.34 6.34 0 0 1 1.4 3.91c.72-.6 1.47-1.13 2.27-1.62A5.47 5.47 0 0 1 14.93 7h.01Zm3.86-1.7a7.29 7.29 0 0 0-2.35 2.46 4.04 4.04 0 0 0-.29 2.44 5.96 5.96 0 0 0 2.29-2.06c.54-.83.53-1.9.35-2.84ZM6.25 30.75a4.77 4.77 0 0 0-1.28-2.63A5.1 5.1 0 0 0 2.13 27c.3.99.77 1.98 1.53 2.7.7.66 1.65.97 2.6 1.06Zm3.37 7.13a4.55 4.55 0 0 0-2.18-1.66 5 5 0 0 0-3.2.19 4.1 4.1 0 0 0 1.97 1.4c1.09.34 2.3.25 3.4.07Zm6.19 4.98a4.57 4.57 0 0 0-2.66-.67c-.89.1-1.73.58-2.38 1.1l-.4.34a4.54 4.54 0 0 0 2.42.5 6.93 6.93 0 0 0 3.02-1.27ZM9.4 9.56a7.26 7.26 0 0 0-.7 3.29 3.68 3.68 0 0 0 1.07 2.3c.55-.87.94-1.89.87-2.93A4.8 4.8 0 0 0 9.4 9.55Zm-5.38 7.92a6.57 6.57 0 0 0 .4 3.16 4.55 4.55 0 0 0 1.73 1.95c.26-.94.34-2-.06-2.91a4.99 4.99 0 0 0-2.07-2.2Z">
+                                       </path>
+                                    </svg>
+                                 </div>
+                                 <div class="ms-4">
+                                    <p class="m-0 pStyleForHead">867</p>
+                                    <p class="m-0 pStyleFontSize12">golden badger</p>
+                                 </div>
+                              </div>
+                              <div class="badger-detail mt-3 d-flex flex-column gap-2">
+                                 <div class="badg-det-1 d-flex justify-content-between">
+                                    <div class="icon-title d-flex border px-2 py-1">
+                                       <div class="discGold "></div>
+                                       delegates
+                                    </div>
+                                    <div class="badg-date">April 6, 2011</div>
+                                 </div>
+                                 <div class="badg-det-1 d-flex justify-content-between">
+                                    <div class="icon-title d-flex border px-2 py-1">
+                                       <div class="discGold"></div>
+                                       inheritance
+                                    </div>
+                                    <div class="badg-date">Nov 12, 2011</div>
+                                 </div>
+                                 <div class="badg-det-1 d-flex justify-content-between">
+                                    <div class="icon-title d-flex border px-2 py-1">
+                                       <div class="discGold"></div>
+                                       events
+                                    </div>
+                                    <div class="badg-date">Jan 22, 2013</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="b-c-1 card p-3 col-sm-6 mt-sm-0 mt-3">
+                              <div class="badger-icon d-flex">
+                                 <div>
+                                    <svg aria-hidden="true" class="fc-gold svg-spot spotAward" width="48"
+                                       height="48" viewBox="0 0 48 48">
+                                       <path fill="#C0C0C0"
+                                          d="M32.87 7a8.85 8.85 0 0 0-2.49-2.79 10.5 10.5 0 0 0-1.41-.92.98.98 0 0 0-.74-.1c-.46.14-.6.62-.71 1.04-.09.31-.2.75-.26 1.27-.12 1-.1 2.4.68 3.58v.01c.83 1.24 1.83 2 2.62 2.46.43.25.88.45 1.3.7a16.38 16.38 0 0 1 8.4 14.34c0 8-5.72 14.66-13.34 16.15a.85.85 0 0 0 .33 1.67c.99-.2 1.95-.47 2.88-.82.23.18.7.55 1.32.94a8.46 8.46 0 0 0 3.38 1.29 5.96 5.96 0 0 0 3.26-.61c.5-.24 1.22-.6 1.43-1.15a.86.86 0 0 0-.04-.72c-.29-.53-.92-1-1.38-1.37a6.88 6.88 0 0 0-2.76-1.39c.49-.4.95-.82 1.39-1.26.56.14 1.12.24 1.7.31 1.03.13 2.43.19 3.67-.2a5.68 5.68 0 0 0 3.32-2.78c.12-.24.22-.53.18-.8a.86.86 0 0 0-.47-.63 9.14 9.14 0 0 0-1.64-.62 6.5 6.5 0 0 0-3.36-.08 18 18 0 0 0 .85-2.04c.4 0 .81-.03 1.21-.1a5.89 5.89 0 0 0 3.14-1.46 7.74 7.74 0 0 0 1.85-3.06c.17-.47.27-.9.33-1.2.07-.32.13-.68-.05-.99-.25-.44-.77-.44-1.22-.42a9.1 9.1 0 0 0-1.24.12c-.9.16-2.06.5-3.04 1.27v-.05c0-.73-.04-1.45-.13-2.15.25-.12.6-.31 1-.59a6.15 6.15 0 0 0 2.11-2.52 8.3 8.3 0 0 0 .57-3.58 9.7 9.7 0 0 0-.14-1.28c-.06-.33-.13-.69-.4-.92a.86.86 0 0 0-.5-.2c-.3-.02-.6.15-.85.28a9.3 9.3 0 0 0-1.08.63 6.63 6.63 0 0 0-2.3 2.58 18 18 0 0 0-1.26-2.24 5.46 5.46 0 0 0 1.82-3.63 8.85 8.85 0 0 0-.65-3.65c-.19-.5-.38-.9-.53-1.2-.21-.4-.47-.85-1-.85a.98.98 0 0 0-.64.3c-.2.18-.65.6-1.11 1.19a6.34 6.34 0 0 0-1.4 3.91c-.72-.6-1.47-1.13-2.27-1.62A5.47 5.47 0 0 0 32.88 7h-.01Zm-3.86-1.7a7.29 7.29 0 0 1 2.35 2.46 4 4 0 0 1 .29 2.44 5.96 5.96 0 0 1-2.29-2.06c-.54-.83-.53-1.9-.35-2.84Zm12.55 25.44c.17-.96.56-1.94 1.28-2.63A5.1 5.1 0 0 1 45.68 27a6.1 6.1 0 0 1-1.53 2.7c-.7.66-1.65.97-2.6 1.06Zm-3.37 7.13a4.55 4.55 0 0 1 2.18-1.66 5 5 0 0 1 3.2.19 4.02 4.02 0 0 1-1.97 1.4 7.6 7.6 0 0 1-3.4.07ZM32 42.86a4.57 4.57 0 0 1 2.66-.67c.89.1 1.73.58 2.38 1.1l.4.34a4.54 4.54 0 0 1-2.42.5A6.93 6.93 0 0 1 32 42.86Zm6.41-33.3a7.2 7.2 0 0 1 .7 3.29 3.68 3.68 0 0 1-1.07 2.3 4.88 4.88 0 0 1-.87-2.93c.07-1 .6-1.91 1.24-2.67Zm5.38 7.92a6.57 6.57 0 0 1-.4 3.16 4.55 4.55 0 0 1-1.73 1.95 4.4 4.4 0 0 1 .06-2.91c.4-.95 1.2-1.67 2.07-2.2Zm-19.95.55L22 23.38a1 1 0 0 1-.94.67h-5.71v.02l4.6 3.48a1 1 0 0 1 .34 1.1l-1.66 5.2 4.7-3.25a1 1 0 0 1 1.13 0l4.6 3.17-1.65-5.2a1 1 0 0 1 .35-1.1l4.52-3.42h-5.64a1 1 0 0 1-.94-.67l-1.85-5.35Zm-.03-2.1a2 2 0 0 1 1.88 1.32l1.66 4.8h5.04c1.81 0 2.62 2.28 1.26 3.46l-.06.05-4.07 3.07 1.5 4.72v.01c.56 1.83-1.48 3.13-2.96 2.15l-.02-.01-4.15-2.86-4.25 2.94-.01.01c-1.49.99-3.53-.31-2.97-2.14v-.02l1.5-4.71-4.07-3.08a1.98 1.98 0 0 1-.67-2.18c.22-.71.87-1.41 1.87-1.41h5.05l1.65-4.78a1.88 1.88 0 0 1 1.82-1.33Zm-9.58 20.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.53-1.9a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm-1.2-2.11a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm-.83-2.36a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.42-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm0-2.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.41-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.83-2.25a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.15-2.23a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.59-1.88a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0ZM16.02 15a.83.83 0 1 1-1.65.01.83.83 0 0 1 1.65 0Zm2.08-1.28a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.3-.94a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.38-.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.42-.11a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.48.29a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.33.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.22 1.14a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.92 1.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.75 1.75a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm1.37 2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.03 2.26a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm.6 2.34a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm.22 2.48a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.18 2.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.62 2.35a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.04 2.2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.35 2.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.73 1.78a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.98 1.43a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.19 1.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.28.75a.82.82 0 1 1-1.65 0 .82.82 0 0 1 1.65 0Zm-2.43.31a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.48-.12a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.43-.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.25-.99a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.26-1.16a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0ZM14.94 7a8.85 8.85 0 0 1 2.49-2.79 10.5 10.5 0 0 1 1.41-.92c.23-.12.5-.18.74-.1.46.14.6.62.71 1.04.1.31.2.75.26 1.27.12 1 .1 2.4-.68 3.58v.01a7.82 7.82 0 0 1-2.62 2.46c-.43.25-.88.45-1.3.7a16.38 16.38 0 0 0-8.4 14.34c0 8 5.73 14.66 13.34 16.15a.85.85 0 0 1-.33 1.67c-.99-.2-1.95-.47-2.88-.82-.23.18-.7.55-1.32.94a8.46 8.46 0 0 1-3.38 1.29 5.96 5.96 0 0 1-3.26-.61c-.5-.24-1.22-.6-1.43-1.15a.86.86 0 0 1 .04-.72c.29-.53.92-1 1.38-1.37a6.88 6.88 0 0 1 2.76-1.39c-.49-.4-.95-.82-1.39-1.26-.56.14-1.12.24-1.7.31a9.12 9.12 0 0 1-3.67-.2 5.68 5.68 0 0 1-3.32-2.78 1.35 1.35 0 0 1-.18-.8c.02-.1.1-.45.47-.63a9.13 9.13 0 0 1 1.64-.62 6.5 6.5 0 0 1 3.36-.08c-.32-.66-.6-1.34-.85-2.04-.4 0-.81-.03-1.21-.1a5.89 5.89 0 0 1-3.13-1.46 7.74 7.74 0 0 1-1.86-3.06 9.2 9.2 0 0 1-.33-1.2c-.07-.32-.13-.68.05-.99.25-.44.77-.44 1.22-.42.31 0 .75.04 1.24.12.9.16 2.06.5 3.04 1.27v-.05c0-.73.04-1.45.13-2.15-.25-.12-.6-.31-1-.59a6.15 6.15 0 0 1-2.11-2.52 8.22 8.22 0 0 1-.57-3.58c.03-.5.08-.95.14-1.28.06-.33.13-.69.4-.92a.86.86 0 0 1 .5-.2c.3-.02.6.15.85.28.28.14.67.35 1.08.63a6.63 6.63 0 0 1 2.3 2.58 18 18 0 0 1 1.26-2.24 5.46 5.46 0 0 1-1.82-3.63c-.1-1.34.28-2.69.65-3.65.19-.5.38-.9.53-1.2.21-.4.47-.85 1-.85.25 0 .45.13.64.3.2.18.65.6 1.11 1.19a6.34 6.34 0 0 1 1.4 3.91c.72-.6 1.47-1.13 2.27-1.62A5.47 5.47 0 0 1 14.93 7h.01Zm3.86-1.7a7.29 7.29 0 0 0-2.35 2.46 4.04 4.04 0 0 0-.29 2.44 5.96 5.96 0 0 0 2.29-2.06c.54-.83.53-1.9.35-2.84ZM6.25 30.75a4.77 4.77 0 0 0-1.28-2.63A5.1 5.1 0 0 0 2.13 27c.3.99.77 1.98 1.53 2.7.7.66 1.65.97 2.6 1.06Zm3.37 7.13a4.55 4.55 0 0 0-2.18-1.66 5 5 0 0 0-3.2.19 4.1 4.1 0 0 0 1.97 1.4c1.09.34 2.3.25 3.4.07Zm6.19 4.98a4.57 4.57 0 0 0-2.66-.67c-.89.1-1.73.58-2.38 1.1l-.4.34a4.54 4.54 0 0 0 2.42.5 6.93 6.93 0 0 0 3.02-1.27ZM9.4 9.56a7.26 7.26 0 0 0-.7 3.29 3.68 3.68 0 0 0 1.07 2.3c.55-.87.94-1.89.87-2.93A4.8 4.8 0 0 0 9.4 9.55Zm-5.38 7.92a6.57 6.57 0 0 0 .4 3.16 4.55 4.55 0 0 0 1.73 1.95c.26-.94.34-2-.06-2.91a4.99 4.99 0 0 0-2.07-2.2Z">
+                                       </path>
+                                    </svg>
+                                 </div>
+                                 <div class="ms-4">
+                                    <p class="m-0 pStyleForHead">9,122
+                                    </p>
+                                    <p class="m-0 pStyleFontSize12">silver badger</p>
+                                 </div>
+                              </div>
+                              <div class="badger-detail mt-3 d-flex flex-column gap-2">
+                                 <div class="badg-det-1 d-flex justify-content-between">
+                                    <div class="icon-title d-flex border px-2 py-1">
+                                       <div class="discSilver "></div>
+                                       .net-2.0
+                                    </div>
+                                    <div class="badg-date">Jun 19, 2019</div>
+                                 </div>
+                                 <div class="badg-det-1 d-flex justify-content-between">
+                                    <div class="icon-title d-flex border px-2 py-1">
+                                       <div class="discSilver"></div>
+                                       coding-style
+                                    </div>
+                                    <div class="badg-date">Jul 10, 2014</div>
+                                 </div>
+                                 <div class="badg-det-1 d-flex justify-content-between">
+                                    <div class="icon-title d-flex border px-2 py-1">
+                                       <div class="discSilver"></div>
+                                       parameters
+                                    </div>
+                                    <div class="badg-date">Aug 02, 2015</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="b-c-1 card p-3 col-xl-4 ms-xl-1 mt-xl-0 mt-3 ">
+                           <div class="badger-icon d-flex">
+                              <div>
+                                 <svg aria-hidden="true" class="fc-gold svg-spot spotAward" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="#CD7F32"
+                                       d="M32.87 7a8.85 8.85 0 0 0-2.49-2.79 10.5 10.5 0 0 0-1.41-.92.98.98 0 0 0-.74-.1c-.46.14-.6.62-.71 1.04-.09.31-.2.75-.26 1.27-.12 1-.1 2.4.68 3.58v.01c.83 1.24 1.83 2 2.62 2.46.43.25.88.45 1.3.7a16.38 16.38 0 0 1 8.4 14.34c0 8-5.72 14.66-13.34 16.15a.85.85 0 0 0 .33 1.67c.99-.2 1.95-.47 2.88-.82.23.18.7.55 1.32.94a8.46 8.46 0 0 0 3.38 1.29 5.96 5.96 0 0 0 3.26-.61c.5-.24 1.22-.6 1.43-1.15a.86.86 0 0 0-.04-.72c-.29-.53-.92-1-1.38-1.37a6.88 6.88 0 0 0-2.76-1.39c.49-.4.95-.82 1.39-1.26.56.14 1.12.24 1.7.31 1.03.13 2.43.19 3.67-.2a5.68 5.68 0 0 0 3.32-2.78c.12-.24.22-.53.18-.8a.86.86 0 0 0-.47-.63 9.14 9.14 0 0 0-1.64-.62 6.5 6.5 0 0 0-3.36-.08 18 18 0 0 0 .85-2.04c.4 0 .81-.03 1.21-.1a5.89 5.89 0 0 0 3.14-1.46 7.74 7.74 0 0 0 1.85-3.06c.17-.47.27-.9.33-1.2.07-.32.13-.68-.05-.99-.25-.44-.77-.44-1.22-.42a9.1 9.1 0 0 0-1.24.12c-.9.16-2.06.5-3.04 1.27v-.05c0-.73-.04-1.45-.13-2.15.25-.12.6-.31 1-.59a6.15 6.15 0 0 0 2.11-2.52 8.3 8.3 0 0 0 .57-3.58 9.7 9.7 0 0 0-.14-1.28c-.06-.33-.13-.69-.4-.92a.86.86 0 0 0-.5-.2c-.3-.02-.6.15-.85.28a9.3 9.3 0 0 0-1.08.63 6.63 6.63 0 0 0-2.3 2.58 18 18 0 0 0-1.26-2.24 5.46 5.46 0 0 0 1.82-3.63 8.85 8.85 0 0 0-.65-3.65c-.19-.5-.38-.9-.53-1.2-.21-.4-.47-.85-1-.85a.98.98 0 0 0-.64.3c-.2.18-.65.6-1.11 1.19a6.34 6.34 0 0 0-1.4 3.91c-.72-.6-1.47-1.13-2.27-1.62A5.47 5.47 0 0 0 32.88 7h-.01Zm-3.86-1.7a7.29 7.29 0 0 1 2.35 2.46 4 4 0 0 1 .29 2.44 5.96 5.96 0 0 1-2.29-2.06c-.54-.83-.53-1.9-.35-2.84Zm12.55 25.44c.17-.96.56-1.94 1.28-2.63A5.1 5.1 0 0 1 45.68 27a6.1 6.1 0 0 1-1.53 2.7c-.7.66-1.65.97-2.6 1.06Zm-3.37 7.13a4.55 4.55 0 0 1 2.18-1.66 5 5 0 0 1 3.2.19 4.02 4.02 0 0 1-1.97 1.4 7.6 7.6 0 0 1-3.4.07ZM32 42.86a4.57 4.57 0 0 1 2.66-.67c.89.1 1.73.58 2.38 1.1l.4.34a4.54 4.54 0 0 1-2.42.5A6.93 6.93 0 0 1 32 42.86Zm6.41-33.3a7.2 7.2 0 0 1 .7 3.29 3.68 3.68 0 0 1-1.07 2.3 4.88 4.88 0 0 1-.87-2.93c.07-1 .6-1.91 1.24-2.67Zm5.38 7.92a6.57 6.57 0 0 1-.4 3.16 4.55 4.55 0 0 1-1.73 1.95 4.4 4.4 0 0 1 .06-2.91c.4-.95 1.2-1.67 2.07-2.2Zm-19.95.55L22 23.38a1 1 0 0 1-.94.67h-5.71v.02l4.6 3.48a1 1 0 0 1 .34 1.1l-1.66 5.2 4.7-3.25a1 1 0 0 1 1.13 0l4.6 3.17-1.65-5.2a1 1 0 0 1 .35-1.1l4.52-3.42h-5.64a1 1 0 0 1-.94-.67l-1.85-5.35Zm-.03-2.1a2 2 0 0 1 1.88 1.32l1.66 4.8h5.04c1.81 0 2.62 2.28 1.26 3.46l-.06.05-4.07 3.07 1.5 4.72v.01c.56 1.83-1.48 3.13-2.96 2.15l-.02-.01-4.15-2.86-4.25 2.94-.01.01c-1.49.99-3.53-.31-2.97-2.14v-.02l1.5-4.71-4.07-3.08a1.98 1.98 0 0 1-.67-2.18c.22-.71.87-1.41 1.87-1.41h5.05l1.65-4.78a1.88 1.88 0 0 1 1.82-1.33Zm-9.58 20.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.53-1.9a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm-1.2-2.11a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm-.83-2.36a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.42-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm0-2.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.41-2.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm.83-2.25a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.15-2.23a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.59-1.88a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0ZM16.02 15a.83.83 0 1 1-1.65.01.83.83 0 0 1 1.65 0Zm2.08-1.28a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.3-.94a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.38-.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.42-.11a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm2.48.29a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.33.71a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm2.22 1.14a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.92 1.41a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.75 1.75a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm1.37 2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm1.03 2.26a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0Zm.6 2.34a.83.83 0 1 1-1.66 0 .83.83 0 0 1 1.65 0Zm.22 2.48a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.18 2.51a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-.62 2.35a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.04 2.2a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.35 2.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.73 1.78a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-1.98 1.43a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.19 1.09a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.28.75a.82.82 0 1 1-1.65 0 .82.82 0 0 1 1.65 0Zm-2.43.31a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.48-.12a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.43-.44a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.25-.99a.83.83 0 1 1-1.65 0 .83.83 0 0 1 1.65 0Zm-2.26-1.16a.83.83 0 1 1-1.64 0 .83.83 0 0 1 1.65 0ZM14.94 7a8.85 8.85 0 0 1 2.49-2.79 10.5 10.5 0 0 1 1.41-.92c.23-.12.5-.18.74-.1.46.14.6.62.71 1.04.1.31.2.75.26 1.27.12 1 .1 2.4-.68 3.58v.01a7.82 7.82 0 0 1-2.62 2.46c-.43.25-.88.45-1.3.7a16.38 16.38 0 0 0-8.4 14.34c0 8 5.73 14.66 13.34 16.15a.85.85 0 0 1-.33 1.67c-.99-.2-1.95-.47-2.88-.82-.23.18-.7.55-1.32.94a8.46 8.46 0 0 1-3.38 1.29 5.96 5.96 0 0 1-3.26-.61c-.5-.24-1.22-.6-1.43-1.15a.86.86 0 0 1 .04-.72c.29-.53.92-1 1.38-1.37a6.88 6.88 0 0 1 2.76-1.39c-.49-.4-.95-.82-1.39-1.26-.56.14-1.12.24-1.7.31a9.12 9.12 0 0 1-3.67-.2 5.68 5.68 0 0 1-3.32-2.78 1.35 1.35 0 0 1-.18-.8c.02-.1.1-.45.47-.63a9.13 9.13 0 0 1 1.64-.62 6.5 6.5 0 0 1 3.36-.08c-.32-.66-.6-1.34-.85-2.04-.4 0-.81-.03-1.21-.1a5.89 5.89 0 0 1-3.13-1.46 7.74 7.74 0 0 1-1.86-3.06 9.2 9.2 0 0 1-.33-1.2c-.07-.32-.13-.68.05-.99.25-.44.77-.44 1.22-.42.31 0 .75.04 1.24.12.9.16 2.06.5 3.04 1.27v-.05c0-.73.04-1.45.13-2.15-.25-.12-.6-.31-1-.59a6.15 6.15 0 0 1-2.11-2.52 8.22 8.22 0 0 1-.57-3.58c.03-.5.08-.95.14-1.28.06-.33.13-.69.4-.92a.86.86 0 0 1 .5-.2c.3-.02.6.15.85.28.28.14.67.35 1.08.63a6.63 6.63 0 0 1 2.3 2.58 18 18 0 0 1 1.26-2.24 5.46 5.46 0 0 1-1.82-3.63c-.1-1.34.28-2.69.65-3.65.19-.5.38-.9.53-1.2.21-.4.47-.85 1-.85.25 0 .45.13.64.3.2.18.65.6 1.11 1.19a6.34 6.34 0 0 1 1.4 3.91c.72-.6 1.47-1.13 2.27-1.62A5.47 5.47 0 0 1 14.93 7h.01Zm3.86-1.7a7.29 7.29 0 0 0-2.35 2.46 4.04 4.04 0 0 0-.29 2.44 5.96 5.96 0 0 0 2.29-2.06c.54-.83.53-1.9.35-2.84ZM6.25 30.75a4.77 4.77 0 0 0-1.28-2.63A5.1 5.1 0 0 0 2.13 27c.3.99.77 1.98 1.53 2.7.7.66 1.65.97 2.6 1.06Zm3.37 7.13a4.55 4.55 0 0 0-2.18-1.66 5 5 0 0 0-3.2.19 4.1 4.1 0 0 0 1.97 1.4c1.09.34 2.3.25 3.4.07Zm6.19 4.98a4.57 4.57 0 0 0-2.66-.67c-.89.1-1.73.58-2.38 1.1l-.4.34a4.54 4.54 0 0 0 2.42.5 6.93 6.93 0 0 0 3.02-1.27ZM9.4 9.56a7.26 7.26 0 0 0-.7 3.29 3.68 3.68 0 0 0 1.07 2.3c.55-.87.94-1.89.87-2.93A4.8 4.8 0 0 0 9.4 9.55Zm-5.38 7.92a6.57 6.57 0 0 0 .4 3.16 4.55 4.55 0 0 0 1.73 1.95c.26-.94.34-2-.06-2.91a4.99 4.99 0 0 0-2.07-2.2Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="ms-4">
+                                 <p class="m-0 pStyleForHead">
+                                    867
+                                 </p>
+                                 <p class="m-0 pStyleFontSize12">bronze badges</p>
+                              </div>
+                           </div>
+                           <div class="badger-detail mt-3 d-flex flex-column gap-2">
+                              <div class="badg-det-1 d-flex justify-content-between">
+                                 <div class="icon-title d-flex border px-2 py-1">
+                                    <div class="disc "></div>
+                                    generic-list
+                                 </div>
+                                 <div class="badg-date">May 6, 2012</div>
+                              </div>
+                              <div class="badg-det-1 d-flex justify-content-between">
+                                 <div class="icon-title d-flex border px-2 py-1">
+                                    <div class="disc"></div>
+                                    xmldocument
+                                 </div>
+                                 <div class="badg-date">Dec 12, 2011</div>
+                              </div>
+                              <div class="badg-det-1  d-flex justify-content-between">
+                                 <div class="icon-title d-flex border px-2 py-1">
+                                    <div class="disc "></div>
+                                    nullexception
+                                 </div>
+                                 <div class="badg-date">April 22, 2013</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- TOP TAGS -->
+                  <div class="top-tags">
+                     <div class="double-p-head p-head-size d-flex justify-content-between ">
+                        <h3>Top tags</h3>
+                        <p  class="p mt-1">View all tags</p>
+                     </div>
+                     <div class="tag-container  d-flex flex-column gap-2 border rounded">
+                        <div class="single-tag d-flex justify-content-between border-bottom p-3">
+                           <div class="tag-right d-flex">
+                              <div class="topTags">c#</div>
+                              <div class="discGold"></div>
+                           </div>
+                           <div class="tag-left d-flex justify-content-between">
+                              <div class="left-tag-p d-flex ">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">262,733</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">score</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">19954</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">posts</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">56</p>
+                                 <p class="score m-0 ps-1 fs-5 pStyleFontSize13">posts %</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-tag d-flex justify-content-between border-bottom p-3">
+                           <div class="tag-right d-flex">
+                              <div class="topTags">.net</div>
+                              <div class="discGold"></div>
+                           </div>
+                           <div class="tag-left d-flex justify-content-between">
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">157,122</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">score</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">10,587</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">posts</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">30</p>
+                                 <p class="score m-0 ps-1 fs-5 pStyleFontSize13">posts %</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-tag d-flex justify-content-between border-bottom p-3">
+                           <div class="tag-right  d-flex">
+                              <div class="topTags">java</div>
+                              <div class="discGold"></div>
+                           </div>
+                           <div class="tag-left d-flex justify-content-between">
+                              <div class="left-tag-p  d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">91,190</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">score</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">5,687</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">posts</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">16</p>
+                                 <p class="score m-0 ps-1 fs-5 pStyleFontSize13">posts %</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-tag d-flex justify-content-between border-bottom p-3">
+                           <div class="tag-right d-flex">
+                              <div class="topTags">linq</div>
+                              <div class="discGold"></div>
+                           </div>
+                           <div class="tag-left d-flex justify-content-between">
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">38,029</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">score</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">3,003</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">posts</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">8</p>
+                                 <p class="score m-0 ps-1 fs-5 pStyleFontSize13">posts %</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-tag d-flex justify-content-between border-bottom p-3">
+                           <div class="tag-right d-flex">
+                              <div class="topTags">string</div>
+                              <div class="discGold"></div>
+                           </div>
+                           <div class="tag-left d-flex justify-content-between">
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">24,548</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">score</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">1,046</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2 pStyleFontSize13">posts</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4 pStyleFontSize17">3</p>
+                                 <p class="score m-0 ps-1 fs-5 pStyleFontSize13">post %</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-tag d-flex justify-content-between border-bottom p-3">
+                           <div class="tag-right d-flex">
+                              <div class="topTags">generics</div>
+                              <div class="discGold"></div>
+                           </div>
+                           <div class="tag-left d-flex justify-content-between">
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4">22,733</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2">score</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4">1,958</p>
+                                 <p class="score m-0 ps-1 fs-5 me-2">posts</p>
+                              </div>
+                              <div class="left-tag-p d-flex">
+                                 <p class="tag-rate m-0 fs-5 fs-sm-4">4</p>
+                                 <p class="score m-0 ps-1 fs-5">posts %</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- TOP post -->
+                  <div class="top-answers">
+                     <div class="double-p-head d-flex justify-content-between row row-cols-1 row-cols-xl-2 ">
+                        <div class="top-ans-h-r col ">
+                           <h3 class="p-head-font m-0">Top posts</h3>
+                           <div>View all <a href="#">questions</a>,<a href="#"> answers </a>, and <a
+                              href="#">articles</a>
+                           </div>
+                        </div>
+                        <div class="top-ans-h-l tag-right d-flex justify-content-between h-25 col mt-2 mb-1">
+                           <div class="d-flex border rounded">
+                              <div class="border-end p-2">All</div>
+                              <div class="border-end p-2">Questions</div>
+                              <div class="border-end p-2">Answers</div>
+                              <div class="border-end p-2">Articles</div>
+                           </div>
+                           <div class="d-flex border rounded">
+                              <div class="border-end p-2">Score</div>
+                              <div class="border-end p-2">Newest</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="ans-container  border rounded">
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div class="">
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">11,854</div>
+                              <div><a href="#" class="anssub ">Why is subtracting
+                                 these two epoch-milli
+                                 Times (in year 1927) giving astrange result?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 ms-4 pStyleFontSize13">jun 27, 2015</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div>
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">5,854</div>
+                              <div><a href="#" class="anssub">Why is char[] preferred over String for
+                                 passwords?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">jan 27, 2013</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div>
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="#9fa6ad"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDiv">5,154</div>
+                              <div><a href="#" class="anssub">What is the difference between String and string in
+                                 C#?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6  pStyleFontSize13">Oct 27, 2008</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div>
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">4,854</div>
+                              <div><a href="#" class="anssub">How do I call one constructor from another in
+                                 Java?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">Nov 27, 2020</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div >
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">5,854</div>
+                              <div><a href="#" class="anssub">What are the correct version numbers for C#?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">jan 27, 2013</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div>
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">5,154</div>
+                              <div><a href="#" class="anssub">What are the correct version numbers for C#?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">Oct 27, 2008</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div >
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">11,854</div>
+                              <div><a href="#" class="anssub">How do I break out of nested loops in Java?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">jun 27, 2015</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div>
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">5,854</div>
+                              <div><a href="#" class="anssub">What is a serialVersionUID and why should I use
+                                 it?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">jan 27, 2013</div>
+                        </div>
+                        <div class="sig-ans-card p-3 d-flex justify-content-between border-bottom">
+                           <div class="d-flex justify-content-start">
+                              <div >
+                                 <svg class="svg-icon iconAnswer" width="18" height="18" viewBox="0 0 18 18">
+                                    <title>answer</title>
+                                    <path fill="hsl(148,70%,31%)"
+                                       d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                    </path>
+                                 </svg>
+                              </div>
+                              <div class="topPostDivbg">5,154</div>
+                              <div><a href="#" class="anssub">Difference between decimal, float and double in
+                                 .NET?</a>
+                              </div>
+                           </div>
+                           <div class="ans-date text-secondary COL fs-md-4 fs-6 pStyleFontSize13">Oct 27, 2008</div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- META POST -->
+                  <div class="top-meta-post">
+                     <div class="double-p-head p-head-size d-flex justify-content-between">
+                        <h3>Top meta post</h3>
+                        <div class="tag-left meta-icon d-flex gap-2 text-secondary">
+                           <div>
+                              <svg aria-hidden="true" class="svg-icon iconQuestion" width="18" height="18"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#6A737C"
+                                    d="m4 15-3 3V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v9c0 1.09-.91 2-2 2H4Zm7.75-3.97c.72-.83.98-1.86.98-2.94 0-1.65-.7-3.22-2.3-3.83a4.41 4.41 0 0 0-3.02 0 3.8 3.8 0 0 0-2.32 3.83c0 1.29.35 2.29 1.03 3a3.8 3.8 0 0 0 2.85 1.07c.62 0 1.2-.11 1.71-.34.65.44 1 .68 1.06.7.23.13.46.23.7.3l.59-1.13a5.2 5.2 0 0 1-1.28-.66Zm-1.27-.9a5.4 5.4 0 0 0-1.5-.8l-.45.9c.33.12.66.29.98.5-.2.07-.42.11-.65.11-.61 0-1.12-.23-1.52-.68-.86-1-.86-3.12 0-4.11.8-.9 2.35-.9 3.15 0 .9 1.01.86 3.03-.01 4.08Z">
+                                 </path>
+                              </svg>
+                           </div>
+                           <p>3</p>
+                           <div>
+                              <svg aria-hidden="true" class="svg-icon iconAnswer" width="18" height="18"
+                                 viewBox="0 0 18 18">
+                                 <path fill="#6A737C"
+                                    d="M14 15H3c-1.09 0-2-.91-2-2V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v14l-3-3Zm-1.02-3L9.82 4H8.14l-3.06 8h1.68l.65-1.79h3.15l.69 1.79h1.73Zm-2.93-3.12H7.9l1.06-2.92 1.09 2.92Z">
+                                 </path>
+                              </svg>
+                           </div>
+                           <p>22</p>
+                        </div>
+                     </div>
+                     <div class="meta-cointainer border-dark-subtle border rounded ">
+                        <div class="sig-meta-card d-flex p-3 border-bottom">
+                           <img src="assets/Metatable.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">944</div>
+                           <div><a href="#" class="lh-base">Congratulations for reaching a million, Gordon
+                              Linoff!</a>
+                           </div>
+                        </div>
+                        <div class="sig-meta-card d-flex p-3 border-bottom">
+                           <img src="assets/Metatable.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">854</div>
+                           <div><a href="#" class="lh-base">Stack Overflow question checklist</a></div>
+                        </div>
+                        <div class="sig-meta-card d-flex p-3 border-bottom">
+                           <img src="assets/Metatable.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">823</div>
+                           <div><a href="#" class="lh-base">Are we being "elitist"? Is there something wrong with
+                              that?</a>
+                           </div>
+                        </div>
+                        <div class="sig-meta-card d-flex p-3 border-bottom">
+                           <img src="assets/Metatable.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">784</div>
+                           <div><a href="#" class="lh-base">What should I do about a user that I'm trying to help
+                              and is calling me
+                              stupid</a>
+                           </div>
+                        </div>
+                        <div class="sig-meta-card d-flex p-3 border-bottom">
+                           <img src="assets/Metatable.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">721</div>
+                           <div><a href="#" class="lh-base">Who's the person with more answers than Jon Skeet? When
+                              will they catch him
+                              in rep
+                              terms?</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- NET POST -->
+                  <div class="top-net-posts">
+                     <div class="double-p-head p-head-size d-flex justify-content-between ">
+                        <h3>Top network posts</h3>
+                        <p>View all network posts</p>
+                     </div>
+                     <div class="meta-cointainer border border-dark-subtle rounded ">
+                        <div class="sig-meta-card p-3 d-flex border-bottom">
+                           <img src="assets/meta.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">844</div>
+                           <div><a href="#" class="linkSyle">Allow an edit to notify downvoters: "I think I've fixed
+                              the issue now -
+                              please
+                              check"</a>
+                           </div>
+                        </div>
+                        <div class="sig-meta-card p-3 d-flex border-bottom">
+                           <img src="assets/meta.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">654</div>
+                           <div><a href="#" class="netsub">Jon Skeet Facts</a></div>
+                        </div>
+                        <div class="sig-meta-card p-3 d-flex border-bottom">
+                           <img src="assets/meta.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">423</div>
+                           <div><a href="#" class="netsub">Should 'Hi', 'thanks', taglines, and salutations be
+                              removed from
+                              posts?</a>
+                           </div>
+                        </div>
+                        <div class="sig-meta-card p-3 d-flex border-bottom">
+                           <img src="assets/server.PNG" alt="meta" class="imgSize">
+                           <div class="topPostDiv">284</div>
+                           <div><a href="#" class="netsub">Shell command to monitor changes in a file</a></div>
+                        </div>
+                        <div class="sig-meta-card p-3 d-flex border-bottom">
+                           <img src="assets/meta.png" alt="meta" class="imgSize">
+                           <div class="topPostDiv">121</div>
+                           <div><a href="#" class="netsub">Please show us when we lose an accepted answer</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- COLLECTIVES -->
+                  <div class="d-block d-lg-none ">
+                     <h3>Collectives</h3>
+                     <div class="detail-card2 card p-2 ps-3">
+                        <a href="https://stackoverflow.com/collectives/google-cloud" class="d-flex aStyle">
+                           <img src="assets/cloud.png" alt="cloud" class="">
+                           <div>
+                              <p class="mb-0 pStyleFontSize15">Google Cloud</p>
+                              <p class="pStyleFontSize12"> 2021 . Employee</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!-- COMMUNITY -->
+                  <div class="d-block d-lg-none ">
+                     <div class="community  d-flex justify-content-between">
+                        <h3 class="c-title">Communities</h3>
+                        <div class="com-view d-flex align-center lh-lg">
+                           <p>View all</p>
+                           <svg aria-hidden="true" class="svg-icon iconShareSm m-2" width="14" height="14" viewBox="0 0 14 14">
+                              <path d="M5 1H3a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V9h-2v2H3V3h2V1Zm2 0h6v6h-2V4.5L6.5 9 5 7.5 9.5 3H7V1Z"></path>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="detail-card3 card p-3 ">
+                        <div class=" d-flex flex-column gap-0">
+                           <div class="card3-list d-flex justify-content-between ">
+                              <div class="d-flex justify-content-start gap-4">
+                                 <img src="assets/stack-overflow.png" alt="stack" class="imgSize">
+                                 <a href="https://stackoverflow.com/users/22656/jon-skeet"
+                                    title="Stack Overflow">Stack
+                                 Overflow</a>
+                              </div>
+                              <p>1.4m</p>
+                           </div>
+                           <div class="card3-list d-flex justify-content-between">
+                              <div class="d-flex justify-content-start gap-4">
+                                 <img src="assets/meta.png" alt="stack" class="imgSize">
+                                 <a href="#">Meta Stack
+                                 Exchange</a>
+                              </div>
+                              <p>93.6k</p>
+                           </div>
+                           <div class="card3-list d-flex justify-content-between">
+                              <div class="d-flex justify-content-start gap-4">
+                                 <img src="assets/super.png" alt="stack" class="imgSize">
+                                 <a href="#">Super User</a>
+                              </div>
+                              <p>5.1k</p>
+                           </div>
+                           <div class="card3-list d-flex justify-content-between">
+                              <div class="d-flex justify-content-start gap-4">
+                                 <img src="assets/server.png" alt="stack" class="imgSize">
+                                 <a href="#">Server Fault</a>
+                              </div>
+                              <p>4.6k</p>
+                           </div>
+                           <div class="card3-list d-flex justify-content-between">
+                              <div class="d-flex justify-content-start gap-4">
+                                 <img src="assets/soft.png" alt="stack" class="imgSize">
+                                 <a href="#">Software
+                                 Engineering</a>
+                              </div>
+                              <p>3.6k</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="about-company flex-wrap">
-                <ul class="social d-flex gap-2 mt-4 p-0 flex-wrap mb-lg-5 pb-lg-5 ">
-                    <li><p>Blog</p></li>
-                    <li><p>Facebook</p></li>
-                    <li><p>Twitter</p></li>
-                    <li><p>LinkedIn</p></li>
-                    <li><p>Instagram</p></li>
-                </ul>
-                <div class="py-lg-3 my-lg-4"></div>
-                <div class="copy-rit mt-lg-5 pt-lg-5 ">
-                    <p class="md:mb0 flex-wrap">
-                        Site design / logo © 2023 Stack Exchange Inc; user contributions<br> licensed under <span
-                            class="td-underline"><a href="https://stackoverflow.com/help/licensing">CC BY-SA</a></span>.
-                        <span id="svnrev">rev&nbsp;2023.8.18.43586</span>
-                    </p>
-                </div>
+         </div>
+      </div>
+      <!-- footer -->
+      <footer class="p-4 flex-wrap container-fluid ">
+         <div class="footer d-lg-flex justify-content-between">
+            <div class="d-lg-flex  justify-content-start m-0 p-0">
+               <div class="footer-icon d-none d-md-block me-lg-4 mb-4">
+                  <a href="#" aria-label="Stack Overflow">
+                     <svg aria-hidden="true" class="native svg-icon iconLogoGlyphMd" width="32" height="37"
+                        viewBox="0 0 32 37">
+                        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                        <path
+                           d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z"
+                           fill="#F48024"></path>
+                     </svg>
+                  </a>
+               </div>
+               <div class="footer-nav d-flex flex-column gap-4 flex-lg-row gap-lg-4 ">
+                  <div class="stack-of overflow ps-lg-4  ps-xl-5">
+                     <h5 class="footerHead ">STACK OVERFLOW</h5>
+                     <ul class="d-flex gap-2 flex-lg-column p-0 m-0 flex-wrap">
+                        <li>Questions</li>
+                        <li>Help</li>
+                     </ul>
+                  </div>
+                  <div class="stack-of ps-xl-5 ps-lg-4">
+                     <h5 class="footerHead ">PRODUCTS</h5>
+                     <ul class="d-flex gap-2  flex-lg-column p-0 m-0  flex-wrap">
+                        <li>Teams</li>
+                        <li>Advertising</li>
+                        <li>Collective</li>
+                        <li>Talent</li>
+                     </ul>
+                  </div>
+                  <div class="stack-of  ps-xl-5 ps-lg-4">
+                     <h5 class="footerHead ">COMPANY</h5>
+                     <ul class="d-flex gap-2  flex-lg-column p-0 m-0 flex-wrap">
+                        <li>About</li>
+                        <li>Press</li>
+                        <li>Work Here</li>
+                        <li>Legal</li>
+                        <li>Privacy policy</li>
+                        <li>Teams</li>
+                        <li>Terms of Service</li>
+                        <li>Contact Us</li>
+                        <li>Cookie Settings</li>
+                        <li>Cookie Policy</li>
+                     </ul>
+                  </div>
+                  <div class="stack-of exchange  ps-xl-5 ps-lg-4">
+                     <h5 class="footerHead">STACK EXCXCHANGE NETWORK</h5>
+                     <ul class="d-flex gap-2  flex-lg-column p-0 m-0 flex-wrap">
+                        <li>Technology</li>
+                        <li>Culture & recreation</li>
+                        <li>Life & arts</li>
+                        <li>Science</li>
+                        <li>Professional</li>
+                        <li>Business</li>
+                        <li class="mt-lg-4">API</li>
+                        <li>Data</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+            <div class="flex-wrap">
+               <ul class="social d-flex gap-2 mt-4 p-0 flex-wrap mb-lg-5 pb-lg-5 ">
+                  <li>Blog</li>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>LinkedIn</li>
+                  <li>Instagram</li>
+               </ul>
+               <div class="py-lg-3 my-lg-4"></div>
+               <div class="copy-rit mt-lg-5 pt-lg-5 ">
+                  <p class="md:mb0 flex-wrap">
+                     Site design / logo © 2023 Stack Exchange Inc; user contributions<br> licensed under <span
+                        class="td-underline"><a href="https://stackoverflow.com/help/licensing">CC BY-SA</a></span>.
+                     <span id="svnrev">rev&nbsp;2023.8.18.43586</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
