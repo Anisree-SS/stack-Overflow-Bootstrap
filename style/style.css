@@ -105,14 +105,12 @@ a{
 
 
 .topTags{
+	display: flex;
+    	height: max-content;
 	margin-right:5px;
 	padding:5px;
 	background:hsl(210,80%,91%);
 	border-radius:5px;
-}
-
-.margin{
-	margin-right:350px;
 }
 
 .discGold{
@@ -169,6 +167,9 @@ footer {
    	background-color: #232629;
     	color: #9199A1 ;
     	position:sticky;
+   	width: 100%;
+	flex-shrink: 0;
+  
 }
 
 footer ul {
