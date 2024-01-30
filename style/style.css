@@ -5,7 +5,9 @@
 	font-family:-apple-system, -apple-system,  BlinkMacSystemFont, 'Segoe UI', Roboto,  
 	Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif; 
 	font-size:13px;
+	
 }
+
 
 nav {
     border-top: 3px solid hsl(27, 90%, 55%);
@@ -24,11 +26,6 @@ input{
 	outline: none;
 }
 
-.bgForUser{
-	background-color: hsl(210,8%,95%);
-	border-radius:5px 0px 0px 5px;	
-}
-
 
 .signup {
     padding: 8px 10px;
@@ -43,6 +40,11 @@ input{
 	margin-top: 15px;
 }
 
+.bgForUser{
+	background-color: hsl(210,8%,95%);
+	border-radius:5px 0px 0px 5px;	
+}
+
 .profile{
 	padding: 6px 12px;
     	border-radius: 1000px;
@@ -55,8 +57,8 @@ input{
 	padding: 6px 12px;
     	border-radius: 1000px;
     	text-decoration: none;
-	color: #525960 !important;
-    	background-color: rgb(224, 224, 224);
+	color:#636B74;
+    	
 }
 
 .imgSize{
@@ -163,13 +165,10 @@ a{
 	
 }
 
-footer {
-   	background-color: #232629;
-    	color: #9199A1 ;
+.footerStyle {
+   	background-color:#000000;
+    	color:hsl(210,8%,80%);
     	position:sticky;
-   	width: 100%;
-	flex-shrink: 0;
-  
 }
 
 footer ul {
@@ -183,6 +182,15 @@ footer ul {
 
 footer ul li a,
 .td-underline a {
-    	color: #9199A1;
+    	color:hsl(210,8%,80%) ;
 }
+
+@media(max-width:375px){
+
+      footer {
+             width:min-content;
+      }
+}
+
+
 
