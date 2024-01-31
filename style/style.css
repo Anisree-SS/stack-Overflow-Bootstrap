@@ -35,8 +35,8 @@ input{
 }
 
 .profilePhoto{
-	width:150px;
-	height:150px;
+	width:140px;
+	height:140px;
 	margin-top: 15px;
 }
 
@@ -169,6 +169,7 @@ a{
    	background-color:#000000;
     	color:hsl(210,8%,80%);
     	position:sticky;
+	width:105%
 }
 
 footer ul {
@@ -185,12 +186,11 @@ footer ul li a,
     	color:hsl(210,8%,80%) ;
 }
 
-@media(max-width:375px){
-
-      footer {
-             width:min-content;
-      }
+.forPadding{
+	padding-right:15%;
 }
 
-
-
+.spanStyle{
+	color:black;
+    	font-weight: 600;
+}
